@@ -1,0 +1,15 @@
+﻿<Window x:Class="PRKTK030225.Windows.ProgressBarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRKTK030225.Windows"
+        mc:Ignorable="d"
+        Title="ProgressBarWindow" Height="150" Width="250" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="Hint" Height="25" Text="Placeholder" Margin="5"/>
+            <ProgressBar IsIndeterminate="True" Margin="5" Width="200" Height="20"/>
+        </StackPanel>
+    </Grid>
+</Window>

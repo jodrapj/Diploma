@@ -28,3 +28,7 @@ C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\ru\EntityFramework.r
 C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030.FF316DE7.Up2Date
 C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Windows\MainAccessWindow.g.cs
 C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Windows\MainAccessWindow.baml
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Pages\MainPage.g.cs
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Pages\MainPage.baml
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Windows\ProgressBarWindow.g.cs
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Windows\ProgressBarWindow.baml

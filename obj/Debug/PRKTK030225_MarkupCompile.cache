@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\App.xaml
-31716414384
+51500671893
 61340430179
-211615496115
+23-265307222
 181296084843
-MainWindow.xaml;Windows\AuthWindow.xaml;Windows\MainAccessWindow.xaml;
+MainWindow.xaml;Pages\MainPage.xaml;Windows\AuthWindow.xaml;Windows\MainAccessWindow.xaml;Windows\ProgressBarWindow.xaml;
 
 False
 

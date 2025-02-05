@@ -5,13 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PRKTK030225.Windows"
         mc:Ignorable="d"
-        Title="MainAccessWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="MainAccessWindow" Height="655" Width="1200" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid>
         <DockPanel LastChildFill="True">
-            <Border VerticalAlignment="Bottom" HorizontalAlignment="Right" DockPanel.Dock="Right">
-                <StackPanel Orientation="Horizontal" >
-                    <TextBlock Margin="2" x:Name="VersionBox"/>
-                    <TextBlock Margin="2" x:Name="LoginShowBox" Text="Вы вошли как: "/>
+            <DockPanel Width="200">
+                <StackPanel>
+                </StackPanel>
+            </DockPanel>
+            <Border VerticalAlignment="Bottom" HorizontalAlignment="Right" DockPanel.Dock="Bottom">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="2" x:Name="VersionBox" Text="version placeholder"/>
+                    <TextBlock Margin="2" x:Name="LoginShowBox" Text="login placeholder"/>
                 </StackPanel>
             </Border>
             <Frame x:Name="MFrame" NavigationUIVisibility="Hidden"/>
