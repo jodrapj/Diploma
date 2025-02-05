@@ -1,0 +1,17 @@
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\PRKTK030225.exe.config
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\PRKTK030225.exe
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\PRKTK030225.pdb
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225.csproj.AssemblyReference.cache
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\MainWindow.g.cs
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\App.g.cs
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225_MarkupCompile.cache
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225_MarkupCompile.lref
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\MainWindow.baml
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225.g.resources
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225.Properties.Resources.resources
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225.csproj.GenerateResource.cache
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225.csproj.CoreCompileInputs.cache
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225.exe
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225.pdb
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Pages\AuthPage.g.cs
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Pages\AuthPage.baml
