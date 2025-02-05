@@ -13,5 +13,8 @@ C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225.csproj.G
 C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225.csproj.CoreCompileInputs.cache
 C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225.exe
 C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225.pdb
-C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Pages\AuthPage.g.cs
-C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Pages\AuthPage.baml
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030225_Content.g.cs
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\res\MainDB.mdf
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\res\MainDB_log.ldf
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Windows\AuthWindow.g.cs
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Windows\AuthWindow.baml

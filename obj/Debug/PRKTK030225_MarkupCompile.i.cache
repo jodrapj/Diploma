@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\App.xaml
-21045467010
+2-628857022
 2-339399522
-8-1577358604
+8-573826828
 13-38814620
-MainWindow.xaml;Pages\AuthPage.xaml;
+MainWindow.xaml;Windows\AuthWindow.xaml;
 
-False
+True
 

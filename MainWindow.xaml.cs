@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using PRKTK030225.Classes;
+using PRKTK030225.Windows;
 
 namespace PRKTK030225
 {
@@ -9,6 +10,8 @@ namespace PRKTK030225
         {
             InitializeComponent();
             Nav.MFrame = MFrame;
+            this.Hide();
+            new AuthWindow().Show();
         }
     }
 }
