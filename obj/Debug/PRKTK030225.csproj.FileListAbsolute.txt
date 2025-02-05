@@ -18,3 +18,13 @@ C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\res\MainDB.mdf
 C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\res\MainDB_log.ldf
 C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Windows\AuthWindow.g.cs
 C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Windows\AuthWindow.baml
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\MainDB.mdf
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\MainDB_log.ldf
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\EntityFramework.dll
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\EntityFramework.xml
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\PRKTK030.FF316DE7.Up2Date
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Windows\MainAccessWindow.g.cs
+C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Windows\MainAccessWindow.baml

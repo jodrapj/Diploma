@@ -8,7 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("maindb.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("maindb_log.ldf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("res/maindb.mdf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("res/maindb_log.ldf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("res/model1.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("res/model1.tt")]
 
 

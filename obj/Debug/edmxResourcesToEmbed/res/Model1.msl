@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище MainDBModelContainer" CdmEntityContainer="MainDBEntities">
+    <EntitySetMapping Name="Credentials">
+      <EntityTypeMapping TypeName="MainDBModel.Credentials">
+        <MappingFragment StoreEntitySet="Credentials">
+          <ScalarProperty Name="AccessLevel_ID" ColumnName="AccessLevel_ID" />
+          <ScalarProperty Name="LOG_ID" ColumnName="LOG_ID" />
+          <ScalarProperty Name="LOGIN" ColumnName="LOGIN" />
+          <ScalarProperty Name="PASSWD" ColumnName="PASSWD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccessLevels">
+      <EntityTypeMapping TypeName="MainDBModel.AccessLevels">
+        <MappingFragment StoreEntitySet="AccessLevels">
+          <ScalarProperty Name="AccessLevel_Name" ColumnName="AccessLevel_Name" />
+          <ScalarProperty Name="AccessLevel_ID" ColumnName="AccessLevel_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hardware">
+      <EntityTypeMapping TypeName="MainDBModel.Hardware">
+        <MappingFragment StoreEntitySet="Hardware">
+          <ScalarProperty Name="HARD_QUANTITY" ColumnName="HARD_QUANTITY" />
+          <ScalarProperty Name="Repair_ID" ColumnName="Repair_ID" />
+          <ScalarProperty Name="Movement_ID" ColumnName="Movement_ID" />
+          <ScalarProperty Name="Supplier_ID" ColumnName="Supplier_ID" />
+          <ScalarProperty Name="Personnel_ID" ColumnName="Personnel_ID" />
+          <ScalarProperty Name="HARDTYPE_ID" ColumnName="HARDTYPE_ID" />
+          <ScalarProperty Name="HARD_STATUS" ColumnName="HARD_STATUS" />
+          <ScalarProperty Name="HARD_NAME" ColumnName="HARD_NAME" />
+          <ScalarProperty Name="HARD_ID" ColumnName="HARD_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HardwareType">
+      <EntityTypeMapping TypeName="MainDBModel.HardwareType">
+        <MappingFragment StoreEntitySet="HardwareType">
+          <ScalarProperty Name="HARDTYPE_NAME" ColumnName="HARDTYPE_NAME" />
+          <ScalarProperty Name="HARDTYPE_ID" ColumnName="HARDTYPE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movement">
+      <EntityTypeMapping TypeName="MainDBModel.Movement">
+        <MappingFragment StoreEntitySet="Movement">
+          <ScalarProperty Name="Movement_Date" ColumnName="Movement_Date" />
+          <ScalarProperty Name="Movement_To" ColumnName="Movement_To" />
+          <ScalarProperty Name="Movement_From" ColumnName="Movement_From" />
+          <ScalarProperty Name="HARD_ID" ColumnName="HARD_ID" />
+          <ScalarProperty Name="Movement_ID" ColumnName="Movement_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personnel">
+      <EntityTypeMapping TypeName="MainDBModel.Personnel">
+        <MappingFragment StoreEntitySet="Personnel">
+          <ScalarProperty Name="Personnel_Status" ColumnName="Personnel_Status" />
+          <ScalarProperty Name="Personnel_Title" ColumnName="Personnel_Title" />
+          <ScalarProperty Name="Personnel_Address" ColumnName="Personnel_Address" />
+          <ScalarProperty Name="Personnel_PhoneNumber" ColumnName="Personnel_PhoneNumber" />
+          <ScalarProperty Name="Personnel_LastName" ColumnName="Personnel_LastName" />
+          <ScalarProperty Name="Personnel_MiddleName" ColumnName="Personnel_MiddleName" />
+          <ScalarProperty Name="Personnel_Name" ColumnName="Personnel_Name" />
+          <ScalarProperty Name="Personnel_ID" ColumnName="Personnel_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Repair">
+      <EntityTypeMapping TypeName="MainDBModel.Repair">
+        <MappingFragment StoreEntitySet="Repair">
+          <ScalarProperty Name="Repair_date" ColumnName="Repair_date" />
+          <ScalarProperty Name="Repair_Status" ColumnName="Repair_Status" />
+          <ScalarProperty Name="Repair_Man" ColumnName="Repair_Man" />
+          <ScalarProperty Name="HARD_ID" ColumnName="HARD_ID" />
+          <ScalarProperty Name="Repair_ID" ColumnName="Repair_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="MainDBModel.Suppliers">
+        <MappingFragment StoreEntitySet="Suppliers">
+          <ScalarProperty Name="Supplier_Address" ColumnName="Supplier_Address" />
+          <ScalarProperty Name="Supplier_Phone" ColumnName="Supplier_Phone" />
+          <ScalarProperty Name="Supplier_FullName" ColumnName="Supplier_FullName" />
+          <ScalarProperty Name="Supplier_OrgName" ColumnName="Supplier_OrgName" />
+          <ScalarProperty Name="Supplier_ID" ColumnName="Supplier_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="MainDBModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

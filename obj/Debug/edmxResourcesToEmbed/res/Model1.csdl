@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MainDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Credentials">
+    <Key>
+      <PropertyRef Name="LOG_ID" />
+    </Key>
+    <Property Name="LOG_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LOGIN" Type="String" MaxLength="254" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PASSWD" Type="String" MaxLength="254" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AccessLevel_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AccessLevels" Relationship="MainDBModel.FK_Credentials_AccessLevels" FromRole="Credentials" ToRole="AccessLevels" />
+  </EntityType>
+  <EntityContainer Name="MainDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Credentials" EntityType="Self.Credentials" />
+    <EntitySet Name="AccessLevels" EntityType="MainDBModel.AccessLevels" />
+    <EntitySet Name="Hardware" EntityType="MainDBModel.Hardware" />
+    <EntitySet Name="HardwareType" EntityType="MainDBModel.HardwareType" />
+    <EntitySet Name="Movement" EntityType="MainDBModel.Movement" />
+    <EntitySet Name="Personnel" EntityType="MainDBModel.Personnel" />
+    <EntitySet Name="Repair" EntityType="MainDBModel.Repair" />
+    <EntitySet Name="Suppliers" EntityType="MainDBModel.Suppliers" />
+    <EntitySet Name="sysdiagrams" EntityType="MainDBModel.sysdiagrams" />
+    <AssociationSet Name="FK_Credentials_AccessLevels" Association="MainDBModel.FK_Credentials_AccessLevels">
+      <End Role="AccessLevels" EntitySet="AccessLevels" />
+      <End Role="Credentials" EntitySet="Credentials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Hardware_HardwareType" Association="MainDBModel.FK_Hardware_HardwareType">
+      <End Role="HardwareType" EntitySet="HardwareType" />
+      <End Role="Hardware" EntitySet="Hardware" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Hardware_Personnel" Association="MainDBModel.FK_Hardware_Personnel">
+      <End Role="Personnel" EntitySet="Personnel" />
+      <End Role="Hardware" EntitySet="Hardware" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Hardware_Repair" Association="MainDBModel.FK_Hardware_Repair">
+      <End Role="Repair" EntitySet="Repair" />
+      <End Role="Hardware" EntitySet="Hardware" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Hardware_Suppliers" Association="MainDBModel.FK_Hardware_Suppliers">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="Hardware" EntitySet="Hardware" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movement_Hardware" Association="MainDBModel.FK_Movement_Hardware">
+      <End Role="Hardware" EntitySet="Hardware" />
+      <End Role="Movement" EntitySet="Movement" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AccessLevels">
+    <Key>
+      <PropertyRef Name="AccessLevel_ID" />
+    </Key>
+    <Property Name="AccessLevel_ID" Type="Int32" Nullable="false" />
+    <Property Name="AccessLevel_Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Credentials" Relationship="MainDBModel.FK_Credentials_AccessLevels" FromRole="AccessLevels" ToRole="Credentials" />
+  </EntityType>
+  <EntityType Name="Hardware">
+    <Key>
+      <PropertyRef Name="HARD_ID" />
+    </Key>
+    <Property Name="HARD_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HARD_NAME" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="HARD_STATUS" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HARDTYPE_ID" Type="Int32" Nullable="false" />
+    <Property Name="Personnel_ID" Type="Int32" Nullable="false" />
+    <Property Name="Supplier_ID" Type="Int32" Nullable="false" />
+    <Property Name="Movement_ID" Type="Int32" />
+    <Property Name="Repair_ID" Type="Int32" />
+    <Property Name="HARD_QUANTITY" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HardwareType" Relationship="MainDBModel.FK_Hardware_HardwareType" FromRole="Hardware" ToRole="HardwareType" />
+    <NavigationProperty Name="Personnel" Relationship="MainDBModel.FK_Hardware_Personnel" FromRole="Hardware" ToRole="Personnel" />
+    <NavigationProperty Name="Repair" Relationship="MainDBModel.FK_Hardware_Repair" FromRole="Hardware" ToRole="Repair" />
+    <NavigationProperty Name="Suppliers" Relationship="MainDBModel.FK_Hardware_Suppliers" FromRole="Hardware" ToRole="Suppliers" />
+    <NavigationProperty Name="Movement" Relationship="MainDBModel.FK_Movement_Hardware" FromRole="Hardware" ToRole="Movement" />
+  </EntityType>
+  <EntityType Name="HardwareType">
+    <Key>
+      <PropertyRef Name="HARDTYPE_ID" />
+    </Key>
+    <Property Name="HARDTYPE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HARDTYPE_NAME" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Hardware" Relationship="MainDBModel.FK_Hardware_HardwareType" FromRole="HardwareType" ToRole="Hardware" />
+  </EntityType>
+  <EntityType Name="Movement">
+    <Key>
+      <PropertyRef Name="Movement_ID" />
+    </Key>
+    <Property Name="Movement_ID" Type="Int32" Nullable="false" />
+    <Property Name="HARD_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Movement_From" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Movement_To" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Movement_Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Hardware" Relationship="MainDBModel.FK_Movement_Hardware" FromRole="Movement" ToRole="Hardware" />
+  </EntityType>
+  <EntityType Name="Personnel">
+    <Key>
+      <PropertyRef Name="Personnel_ID" />
+    </Key>
+    <Property Name="Personnel_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Personnel_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Personnel_MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Personnel_LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Personnel_PhoneNumber" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="Personnel_Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Personnel_Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Personnel_Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Hardware" Relationship="MainDBModel.FK_Hardware_Personnel" FromRole="Personnel" ToRole="Hardware" />
+  </EntityType>
+  <EntityType Name="Repair">
+    <Key>
+      <PropertyRef Name="Repair_ID" />
+    </Key>
+    <Property Name="Repair_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HARD_ID" Type="Int32" />
+    <Property Name="Repair_Man" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Repair_Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Repair_date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Hardware" Relationship="MainDBModel.FK_Hardware_Repair" FromRole="Repair" ToRole="Hardware" />
+  </EntityType>
+  <EntityType Name="Suppliers">
+    <Key>
+      <PropertyRef Name="Supplier_ID" />
+    </Key>
+    <Property Name="Supplier_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Supplier_OrgName" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Supplier_FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Supplier_Phone" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="Supplier_Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Hardware" Relationship="MainDBModel.FK_Hardware_Suppliers" FromRole="Suppliers" ToRole="Hardware" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Credentials_AccessLevels">
+    <End Type="MainDBModel.AccessLevels" Role="AccessLevels" Multiplicity="1" />
+    <End Type="MainDBModel.Credentials" Role="Credentials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccessLevels">
+        <PropertyRef Name="AccessLevel_ID" />
+      </Principal>
+      <Dependent Role="Credentials">
+        <PropertyRef Name="AccessLevel_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Hardware_HardwareType">
+    <End Type="MainDBModel.HardwareType" Role="HardwareType" Multiplicity="1" />
+    <End Type="MainDBModel.Hardware" Role="Hardware" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HardwareType">
+        <PropertyRef Name="HARDTYPE_ID" />
+      </Principal>
+      <Dependent Role="Hardware">
+        <PropertyRef Name="HARDTYPE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Hardware_Personnel">
+    <End Type="MainDBModel.Personnel" Role="Personnel" Multiplicity="1" />
+    <End Type="MainDBModel.Hardware" Role="Hardware" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personnel">
+        <PropertyRef Name="Personnel_ID" />
+      </Principal>
+      <Dependent Role="Hardware">
+        <PropertyRef Name="Personnel_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Hardware_Repair">
+    <End Type="MainDBModel.Repair" Role="Repair" Multiplicity="0..1" />
+    <End Type="MainDBModel.Hardware" Role="Hardware" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Repair">
+        <PropertyRef Name="Repair_ID" />
+      </Principal>
+      <Dependent Role="Hardware">
+        <PropertyRef Name="Repair_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Hardware_Suppliers">
+    <End Type="MainDBModel.Suppliers" Role="Suppliers" Multiplicity="1" />
+    <End Type="MainDBModel.Hardware" Role="Hardware" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="Hardware">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movement_Hardware">
+    <End Type="MainDBModel.Hardware" Role="Hardware" Multiplicity="1" />
+    <End Type="MainDBModel.Movement" Role="Movement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hardware">
+        <PropertyRef Name="HARD_ID" />
+      </Principal>
+      <Dependent Role="Movement">
+        <PropertyRef Name="HARD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

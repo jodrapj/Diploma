@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище MainDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AccessLevels">
+    <Key>
+      <PropertyRef Name="AccessLevel_ID" />
+    </Key>
+    <Property Name="AccessLevel_ID" Type="int" Nullable="false" />
+    <Property Name="AccessLevel_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Credentials">
+    <Key>
+      <PropertyRef Name="LOG_ID" />
+    </Key>
+    <Property Name="LOG_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LOGIN" Type="nvarchar" MaxLength="254" Nullable="false" />
+    <Property Name="PASSWD" Type="nvarchar" MaxLength="254" Nullable="false" />
+    <Property Name="AccessLevel_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Hardware">
+    <Key>
+      <PropertyRef Name="HARD_ID" />
+    </Key>
+    <Property Name="HARD_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HARD_NAME" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="HARD_STATUS" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="HARDTYPE_ID" Type="int" Nullable="false" />
+    <Property Name="Personnel_ID" Type="int" Nullable="false" />
+    <Property Name="Supplier_ID" Type="int" Nullable="false" />
+    <Property Name="Movement_ID" Type="int" />
+    <Property Name="Repair_ID" Type="int" />
+    <Property Name="HARD_QUANTITY" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HardwareType">
+    <Key>
+      <PropertyRef Name="HARDTYPE_ID" />
+    </Key>
+    <Property Name="HARDTYPE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HARDTYPE_NAME" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Movement">
+    <Key>
+      <PropertyRef Name="Movement_ID" />
+    </Key>
+    <Property Name="Movement_ID" Type="int" Nullable="false" />
+    <Property Name="HARD_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Movement_From" Type="nvarchar(max)" />
+    <Property Name="Movement_To" Type="nvarchar(max)" />
+    <Property Name="Movement_Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Personnel">
+    <Key>
+      <PropertyRef Name="Personnel_ID" />
+    </Key>
+    <Property Name="Personnel_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Personnel_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Personnel_MiddleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Personnel_LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Personnel_PhoneNumber" Type="nvarchar" MaxLength="12" />
+    <Property Name="Personnel_Address" Type="nvarchar(max)" />
+    <Property Name="Personnel_Title" Type="nvarchar" MaxLength="150" />
+    <Property Name="Personnel_Status" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Repair">
+    <Key>
+      <PropertyRef Name="Repair_ID" />
+    </Key>
+    <Property Name="Repair_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HARD_ID" Type="int" />
+    <Property Name="Repair_Man" Type="nvarchar(max)" />
+    <Property Name="Repair_Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="Repair_date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Suppliers">
+    <Key>
+      <PropertyRef Name="Supplier_ID" />
+    </Key>
+    <Property Name="Supplier_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Supplier_OrgName" Type="nvarchar" MaxLength="300" />
+    <Property Name="Supplier_FullName" Type="nvarchar(max)" />
+    <Property Name="Supplier_Phone" Type="nvarchar" MaxLength="12" />
+    <Property Name="Supplier_Address" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Credentials_AccessLevels">
+    <End Role="AccessLevels" Type="Self.AccessLevels" Multiplicity="1" />
+    <End Role="Credentials" Type="Self.Credentials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccessLevels">
+        <PropertyRef Name="AccessLevel_ID" />
+      </Principal>
+      <Dependent Role="Credentials">
+        <PropertyRef Name="AccessLevel_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Hardware_HardwareType">
+    <End Role="HardwareType" Type="Self.HardwareType" Multiplicity="1" />
+    <End Role="Hardware" Type="Self.Hardware" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HardwareType">
+        <PropertyRef Name="HARDTYPE_ID" />
+      </Principal>
+      <Dependent Role="Hardware">
+        <PropertyRef Name="HARDTYPE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Hardware_Personnel">
+    <End Role="Personnel" Type="Self.Personnel" Multiplicity="1" />
+    <End Role="Hardware" Type="Self.Hardware" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personnel">
+        <PropertyRef Name="Personnel_ID" />
+      </Principal>
+      <Dependent Role="Hardware">
+        <PropertyRef Name="Personnel_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Hardware_Repair">
+    <End Role="Repair" Type="Self.Repair" Multiplicity="0..1" />
+    <End Role="Hardware" Type="Self.Hardware" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Repair">
+        <PropertyRef Name="Repair_ID" />
+      </Principal>
+      <Dependent Role="Hardware">
+        <PropertyRef Name="Repair_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Hardware_Suppliers">
+    <End Role="Suppliers" Type="Self.Suppliers" Multiplicity="1" />
+    <End Role="Hardware" Type="Self.Hardware" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="Hardware">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movement_Hardware">
+    <End Role="Hardware" Type="Self.Hardware" Multiplicity="1" />
+    <End Role="Movement" Type="Self.Movement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hardware">
+        <PropertyRef Name="HARD_ID" />
+      </Principal>
+      <Dependent Role="Movement">
+        <PropertyRef Name="HARD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище MainDBModelContainer">
+    <EntitySet Name="AccessLevels" EntityType="Self.AccessLevels" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Credentials" EntityType="Self.Credentials" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Hardware" EntityType="Self.Hardware" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HardwareType" EntityType="Self.HardwareType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Movement" EntityType="Self.Movement" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Personnel" EntityType="Self.Personnel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Repair" EntityType="Self.Repair" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Suppliers" EntityType="Self.Suppliers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Credentials_AccessLevels" Association="Self.FK_Credentials_AccessLevels">
+      <End Role="AccessLevels" EntitySet="AccessLevels" />
+      <End Role="Credentials" EntitySet="Credentials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Hardware_HardwareType" Association="Self.FK_Hardware_HardwareType">
+      <End Role="HardwareType" EntitySet="HardwareType" />
+      <End Role="Hardware" EntitySet="Hardware" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Hardware_Personnel" Association="Self.FK_Hardware_Personnel">
+      <End Role="Personnel" EntitySet="Personnel" />
+      <End Role="Hardware" EntitySet="Hardware" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Hardware_Repair" Association="Self.FK_Hardware_Repair">
+      <End Role="Repair" EntitySet="Repair" />
+      <End Role="Hardware" EntitySet="Hardware" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Hardware_Suppliers" Association="Self.FK_Hardware_Suppliers">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="Hardware" EntitySet="Hardware" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movement_Hardware" Association="Self.FK_Movement_Hardware">
+      <End Role="Hardware" EntitySet="Hardware" />
+      <End Role="Movement" EntitySet="Movement" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

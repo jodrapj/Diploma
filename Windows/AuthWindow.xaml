@@ -9,8 +9,8 @@
         WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel VerticalAlignment="Center">
-            <TextBox Width="150" Margin="5" Height="30"/>
-            <TextBox Width="150" Margin="5" Height="30"/>
+            <TextBox Width="150" Margin="5" Height="30" FontSize="16" x:Name="L"/>
+            <PasswordBox Width="150" Margin="5" Height="30" FontSize="16" x:Name="P"/>
             <Button Content="Войти" Width="75" Margin="5" Height="25" Click="Login_Click"/>
         </StackPanel>
         <Button Padding="0" Height="30" Background="Transparent" BorderThickness="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10"

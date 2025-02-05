@@ -9,7 +9,6 @@ namespace PRKTK030225
         public MainWindow()
         {
             InitializeComponent();
-            Nav.MFrame = MFrame;
             this.Hide();
             new AuthWindow().Show();
         }
