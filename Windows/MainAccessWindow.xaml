@@ -11,6 +11,7 @@
             <DockPanel Width="200">
                 <StackPanel>
                 </StackPanel>
+                <Button Height="30" Margin="5" VerticalAlignment="Bottom" Content="Выйти" Click="Logout_Click"/>
             </DockPanel>
             <Border VerticalAlignment="Bottom" HorizontalAlignment="Right" DockPanel.Dock="Bottom">
                 <StackPanel Orientation="Horizontal">

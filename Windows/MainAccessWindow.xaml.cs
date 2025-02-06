@@ -11,10 +11,12 @@ namespace PRKTK030225.Windows
     public partial class MainAccessWindow : Window
     {
         ProgressBarWindow progressBarWindow;
+        int? accessLevel;
 
         public MainAccessWindow(int accessLevel, string login)
         {
             InitializeComponent();
+            this.accessLevel = accessLevel;
             progressBarWindow = new ProgressBarWindow("Закрываем соединение с БД.", "Подождите");
             Data.MFrame = MFrame;
             LoginShowBox.Text = $"Вы вошли как: {login}";
@@ -28,6 +30,14 @@ namespace PRKTK030225.Windows
             e.Cancel = true;
             Connect.context.Database.Connection.Close();
             Environment.Exit(0);
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            accessLevel = null;
+            new Windows.AuthWindow().Show();
+            Connect.context.Database.Connection.Close();
+            this.Hide();
         }
     }
 }

@@ -31,11 +31,6 @@ namespace PRKTK030225.Windows
                 this.DragMove();
         }
 
-        private void Button_Exit(object sender, RoutedEventArgs e)
-        {
-            Environment.Exit(0);
-        }
-
         private void Login_Click(object sender, RoutedEventArgs e)
         {
             var a = Connect.context.Credentials.Where(x => x.LOGIN == L.Text && x.PASSWD == P.Password).ToList();
@@ -48,6 +43,11 @@ namespace PRKTK030225.Windows
 
             MessageBox.Show("Введен неправильный логин или пароль.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.None);
             P.Password = "";
+        }
+
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

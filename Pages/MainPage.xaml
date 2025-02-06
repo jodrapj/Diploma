@@ -9,11 +9,5 @@
       Title="MainPage">
 
     <Grid>
-        <DockPanel LastChildFill="True">
-            <TabControl>
-                <TabItem Header="test1">
-                </TabItem>
-            </TabControl>
-        </DockPanel>
     </Grid>
 </Page>

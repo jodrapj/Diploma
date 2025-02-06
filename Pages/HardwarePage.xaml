@@ -1,0 +1,35 @@
+﻿<Window x:Class="PRKTK030225.Pages.HardwarePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRKTK030225.Pages"
+        mc:Ignorable="d"
+        Title="HardwarePage" Height="450" Width="800">
+    <Grid>
+        <ListView x:Name="HardList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="2">
+                        <StackPanel Margin="5">
+                            <TextBlock Text="{Binding HARD_ID}"/>
+                            <TextBlock Text="{Binding HARD_NAME}"/>
+                            <TextBlock Text="{Binding HARD_STATUS}"/>
+                            <TextBlock Text="{Binding HARDTYPE_ID}"/>
+                            <TextBlock Text="{Binding Personnel_ID}"/>
+                            <TextBlock Text="{Binding Supplier_ID}"/>
+                            <TextBlock Text="{Binding Movement_ID}"/>
+                            <TextBlock Text="{Binding Repair_ID}"/>
+                            <TextBlock Text="{Binding HARD_QUANTITY}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+    </Grid>
+</Window>
