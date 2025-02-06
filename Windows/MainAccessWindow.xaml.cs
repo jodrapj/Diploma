@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Threading;
 using System.Windows;
 using PRKTK030225.Classes;
+using PRKTK030225.Pages;
+using PRKTK030225.res;
 
 namespace PRKTK030225.Windows
 {
@@ -12,6 +13,13 @@ namespace PRKTK030225.Windows
     {
         ProgressBarWindow progressBarWindow;
         int? accessLevel;
+        int currentPage = 0;
+
+        HardwarePage hPage;
+        MovementPage mPage;
+        PersonnelPage pPage;
+        RepairPage rPage;
+        SuppliersPage sPage;
 
         public MainAccessWindow(int accessLevel, string login)
         {
@@ -21,7 +29,11 @@ namespace PRKTK030225.Windows
             Data.MFrame = MFrame;
             LoginShowBox.Text = $"Вы вошли как: {login}";
             VersionBox.Text = Data.version;
-            Data.MFrame.Navigate(new Pages.MainPage());
+            hPage = new HardwarePage();
+            mPage = new MovementPage();
+            pPage = new PersonnelPage();
+            rPage = new RepairPage();
+            sPage = new SuppliersPage();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -35,9 +47,78 @@ namespace PRKTK030225.Windows
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             accessLevel = null;
+            progressBarWindow.Show();
             new Windows.AuthWindow().Show();
             Connect.context.Database.Connection.Close();
+            hPage = null;
+            mPage = null;
+            pPage = null;
+            rPage = null;
+            sPage = null;
             this.Hide();
+            progressBarWindow.Close();
+        }
+
+        private void Hardware_Click(object sender, RoutedEventArgs e)
+        {
+            Data.MFrame.Navigate(hPage);
+            currentPage = 1;
+        }
+
+        private void Movement_Click(object sender, RoutedEventArgs e)
+        {
+            Data.MFrame.Navigate(mPage);
+            currentPage = 2;
+        }
+
+        private void Personnel_Click(object sender, RoutedEventArgs e)
+        {
+            Data.MFrame.Navigate(pPage);
+            currentPage = 3;
+        }
+
+        private void Suppliers_Click(object sender, RoutedEventArgs e)
+        {
+            Data.MFrame.Navigate(sPage);
+            currentPage = 4;
+        }
+
+        private void Repair_Click(object sender, RoutedEventArgs e)
+        {
+            Data.MFrame.Navigate(rPage);
+            currentPage = 5;
+        }
+
+        private void Edit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Remove_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            switch(currentPage)
+            {
+                case 1:
+                    hPage.Add();
+                    break;
+                case 2:
+                    mPage.Add();
+                    break;
+                case 3:
+                    pPage.Add();
+                    break;
+                case 4:
+                    sPage.Add();
+                    break;
+                case 5:
+                    rPage.Add();
+                    break;
+            }
         }
     }
 }

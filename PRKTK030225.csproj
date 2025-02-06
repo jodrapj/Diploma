@@ -79,7 +79,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Interfaces\AddEditRemove.cs" />
     <Compile Include="Classes\Connect.cs" />
+    <Compile Include="Pages\AddEdit\AddEditHardware.xaml.cs">
+      <DependentUpon>AddEditHardware.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddEdit\AddEditMovement.xaml.cs">
+      <DependentUpon>AddEditMovement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddEdit\AddEditPersonnel.xaml.cs">
+      <DependentUpon>AddEditPersonnel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddEdit\AddEditRepair.xaml.cs">
+      <DependentUpon>AddEditRepair.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddEdit\AddEditSuppliers.xaml.cs">
+      <DependentUpon>AddEditSuppliers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\HardwarePage.xaml.cs">
       <DependentUpon>HardwarePage.xaml</DependentUpon>
     </Compile>
@@ -167,6 +183,26 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AddEdit\AddEditHardware.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AddEdit\AddEditMovement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AddEdit\AddEditPersonnel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AddEdit\AddEditRepair.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AddEdit\AddEditSuppliers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\HardwarePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -9,7 +9,15 @@
     <Grid>
         <DockPanel LastChildFill="True">
             <DockPanel Width="200">
-                <StackPanel>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" DockPanel.Dock="Top">
+                    <Button Height="30" Margin="5" Content="Оборудование" Click="Hardware_Click"/>
+                    <Button Height="30" Margin="5" Content="Движения" Click="Movement_Click"/>
+                    <Button Height="30" Margin="5" Content="Персонал" Click="Personnel_Click"/>
+                    <Button Height="30" Margin="5" Content="Поставщики" Click="Suppliers_Click"/>
+                    <Button Height="30" Margin="5" Content="Ремонт" Click="Repair_Click"/>
+                    <Button Height="30" Margin="5,20,5,5" Content="Добавить" Click="Add_Click"/>
+                    <Button Height="30" Margin="5" Content="Удалить" Click="Remove_Click"/>
+                    <Button Height="30" Margin="5" Content="Изменить" Click="Edit_Click"/>
                 </StackPanel>
                 <Button Height="30" Margin="5" VerticalAlignment="Bottom" Content="Выйти" Click="Logout_Click"/>
             </DockPanel>

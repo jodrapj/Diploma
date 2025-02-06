@@ -71,3 +71,13 @@ C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\MovementPage.ba
 C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\PersonnelPage.baml
 C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\RepairPage.baml
 C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\SuppliersPage.baml
+C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\AddEdit\AddEditHardware.g.cs
+C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\AddEdit\AddEditMovement.g.cs
+C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\AddEdit\AddEditPersonnel.g.cs
+C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\AddEdit\AddEditRepair.g.cs
+C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\AddEdit\AddEditSuppliers.g.cs
+C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\AddEdit\AddEditHardware.baml
+C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\AddEdit\AddEditMovement.baml
+C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\AddEdit\AddEditPersonnel.baml
+C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\AddEdit\AddEditRepair.baml
+C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\Pages\AddEdit\AddEditSuppliers.baml

@@ -33,14 +33,18 @@ namespace PRKTK030225.Windows
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
+            var b = new Windows.ProgressBarWindow("Загрузка...", "Подождите");
+            b.Show();
             var a = Connect.context.Credentials.Where(x => x.LOGIN == L.Text && x.PASSWD == P.Password).ToList();
             if (a.Count != 0)
             {
                 this.Close();
+                b.Close();
                 new MainAccessWindow(a[0].AccessLevel_ID, a[0].LOGIN).Show();
                 return;
             }
 
+            b.Close();
             MessageBox.Show("Введен неправильный логин или пароль.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.None);
             P.Password = "";
         }

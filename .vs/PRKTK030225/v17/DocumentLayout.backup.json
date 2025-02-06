@@ -3,44 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\windows\\authwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:windows\\authwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\addedit\\addedithardware.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\addedit\\addedithardware.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\windows\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:windows\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\supplierspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\supplierspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\repairpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\repairpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\personnelpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\personnelpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\movementpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\movementpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\pages\\hardwarepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\hardwarepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\addedit\\addeditsuppliers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\addedit\\addeditsuppliers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\pages\\hardwarepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\hardwarepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\addedit\\addeditrepair.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\addedit\\addeditrepair.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\pages\\personnelpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\personnelpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\addedit\\addeditpersonnel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\addedit\\addeditpersonnel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\pages\\supplierspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\supplierspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\addedit\\addeditmovement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\addedit\\addeditmovement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\pages\\repairpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\repairpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\addedit\\addeditsuppliers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\addedit\\addeditsuppliers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\pages\\movementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\movementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\addedit\\addeditrepair.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\addedit\\addeditrepair.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\addedit\\addeditmovement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\addedit\\addeditmovement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\addedit\\addedithardware.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\addedit\\addedithardware.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\addedit\\addeditpersonnel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\addedit\\addeditpersonnel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\windows\\mainaccesswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,6 +69,37 @@
     {
       "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\windows\\mainaccesswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:windows\\mainaccesswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\pages\\hardwarepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\hardwarepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\interfaces\\addeditremove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:interfaces\\addeditremove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\pages\\repairpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\repairpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|c:\\users\\student.desktop-qkgsv6o\\desktop\\diploma\\pages\\movementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\movementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\pages\\personnelpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\personnelpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Student.DESKTOP-QKGSV6O\\AppData\\Local\\Temp\\.vsdbgsrc\\b202e958bb04cfade5e67ad24f9352af194ebbde46e4c3ce26a3e0ac00ab14bd\\NavigationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{465D4C2A-D64E-4366-855A-A6126372C517}|PRKTK030225.csproj|solutionrelative:pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,36 +109,275 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Windows\\AuthWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Windows\\AuthWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Windows\\AuthWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Windows\\AuthWindow.xaml.cs",
-              "RelativeToolTip": "Windows\\AuthWindow.xaml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAxwDEAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "MovementPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\MovementPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\MovementPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\MovementPage.xaml.cs",
+              "RelativeToolTip": "Pages\\MovementPage.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T07:32:17.65Z",
+              "WhenOpened": "2025-02-06T08:19:22.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "HardwarePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\HardwarePage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\HardwarePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\HardwarePage.xaml.cs",
+              "RelativeToolTip": "Pages\\HardwarePage.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T08:12:43.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RepairPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\RepairPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\RepairPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\RepairPage.xaml.cs",
+              "RelativeToolTip": "Pages\\RepairPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T08:24:56.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SuppliersPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\SuppliersPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\SuppliersPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\SuppliersPage.xaml.cs",
+              "RelativeToolTip": "Pages\\SuppliersPage.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T08:25:14.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pages\\AddEdit\\AddEditHardware.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditHardware.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditHardware.xaml.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditHardware.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditHardware.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T10:04:14.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonnelPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\PersonnelPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\PersonnelPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\PersonnelPage.xaml.cs",
+              "RelativeToolTip": "Pages\\PersonnelPage.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T08:18:44.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddEditSuppliers.xaml",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditSuppliers.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditSuppliers.xaml",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditSuppliers.xaml",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditSuppliers.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-06T09:55:04.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddEditPersonnel.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditPersonnel.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditPersonnel.xaml.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditPersonnel.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditPersonnel.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T10:18:40.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddEditMovement.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditMovement.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditMovement.xaml.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditMovement.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditMovement.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T10:18:09.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddEditSuppliers.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditSuppliers.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditSuppliers.xaml.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditSuppliers.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditSuppliers.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T10:27:20.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddEditRepair.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditRepair.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditRepair.xaml.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditRepair.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditRepair.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T10:24:12.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddEditRepair.xaml",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditRepair.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditRepair.xaml",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditRepair.xaml",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditRepair.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-06T09:54:53.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddEditMovement.xaml",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditMovement.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditMovement.xaml",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditMovement.xaml",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditMovement.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-06T09:54:35.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddEditHardware.xaml",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditHardware.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditHardware.xaml",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditHardware.xaml",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditHardware.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-06T09:54:28.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AddEditPersonnel.xaml",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditPersonnel.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditPersonnel.xaml",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditPersonnel.xaml",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditPersonnel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-06T09:54:43.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainAccessWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Windows\\MainAccessWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\MainAccessWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Windows\\MainAccessWindow.xaml.cs",
+              "RelativeToolTip": "Windows\\MainAccessWindow.xaml.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAIA2wG8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T05:46:07.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainAccessWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Windows\\MainAccessWindow.xaml",
+              "RelativeDocumentMoniker": "Windows\\MainAccessWindow.xaml",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Windows\\MainAccessWindow.xaml",
+              "RelativeToolTip": "Windows\\MainAccessWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-06T05:44:18.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "HardwarePage.xaml",
               "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\HardwarePage.xaml",
               "RelativeDocumentMoniker": "Pages\\HardwarePage.xaml",
               "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\HardwarePage.xaml",
               "RelativeToolTip": "Pages\\HardwarePage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-06T05:57:32.992Z",
+              "WhenOpened": "2025-02-06T08:12:38.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
+              "Title": "AddEditRemove.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Interfaces\\AddEditRemove.cs",
+              "RelativeDocumentMoniker": "Interfaces\\AddEditRemove.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Interfaces\\AddEditRemove.cs",
+              "RelativeToolTip": "Interfaces\\AddEditRemove.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T09:46:04.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RepairPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\RepairPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\RepairPage.xaml",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\RepairPage.xaml",
+              "RelativeToolTip": "Pages\\RepairPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-06T05:58:17.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MovementPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\MovementPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\MovementPage.xaml",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\MovementPage.xaml",
+              "RelativeToolTip": "Pages\\MovementPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-06T08:17:27.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\MainPage.xaml",
               "RelativeDocumentMoniker": "Pages\\MainPage.xaml",
@@ -99,19 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Windows\\AuthWindow.xaml",
-              "RelativeDocumentMoniker": "Windows\\AuthWindow.xaml",
-              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Windows\\AuthWindow.xaml",
-              "RelativeToolTip": "Windows\\AuthWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-06T05:45:45.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 22,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\MainPage.xaml.cs",
@@ -124,20 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HardwarePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\HardwarePage.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\HardwarePage.xaml.cs",
-              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\HardwarePage.xaml.cs",
-              "RelativeToolTip": "Pages\\HardwarePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T05:59:35.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
               "Title": "PersonnelPage.xaml",
               "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\PersonnelPage.xaml",
               "RelativeDocumentMoniker": "Pages\\PersonnelPage.xaml",
@@ -149,60 +414,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MovementPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\MovementPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\MovementPage.xaml",
-              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\MovementPage.xaml",
-              "RelativeToolTip": "Pages\\MovementPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-06T05:57:56.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RepairPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\RepairPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\RepairPage.xaml",
-              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\RepairPage.xaml",
-              "RelativeToolTip": "Pages\\RepairPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-06T05:58:17.163Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SuppliersPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\SuppliersPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\SuppliersPage.xaml",
-              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Pages\\SuppliersPage.xaml",
-              "RelativeToolTip": "Pages\\SuppliersPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-06T05:58:29.624Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Windows\\MainAccessWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Windows\\MainAccessWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Windows\\MainAccessWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Windows\\MainAccessWindow.xaml.cs",
-              "RelativeToolTip": "Windows\\MainAccessWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\AppData\\Local\\Temp\\.vsdbgsrc\\b202e958bb04cfade5e67ad24f9352af194ebbde46e4c3ce26a3e0ac00ab14bd\\NavigationService.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b202e958bb04cfade5e67ad24f9352af194ebbde46e4c3ce26a3e0ac00ab14bd\\NavigationService.cs",
+              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\AppData\\Local\\Temp\\.vsdbgsrc\\b202e958bb04cfade5e67ad24f9352af194ebbde46e4c3ce26a3e0ac00ab14bd\\NavigationService.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b202e958bb04cfade5e67ad24f9352af194ebbde46e4c3ce26a3e0ac00ab14bd\\NavigationService.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAAIAEAAAAAAAAAAAqwJcEAAADAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T05:46:07.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainAccessWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Windows\\MainAccessWindow.xaml",
-              "RelativeDocumentMoniker": "Windows\\MainAccessWindow.xaml",
-              "ToolTip": "C:\\Users\\Student.DESKTOP-QKGSV6O\\Desktop\\Diploma\\Windows\\MainAccessWindow.xaml",
-              "RelativeToolTip": "Windows\\MainAccessWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-06T05:44:18.582Z"
+              "WhenOpened": "2025-02-06T08:07:57.839Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
             }
           ]
         }

@@ -9,6 +9,25 @@
       Title="MovementPage">
 
     <Grid>
-        
+        <ListView x:Name="MoveList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="2">
+                        <StackPanel Margin="5">
+                            <TextBlock Text="{Binding Movement_ID}"/>
+                            <TextBlock Text="{Binding HARD_ID}"/>
+                            <TextBlock Text="{Binding Movement_From}"/>
+                            <TextBlock Text="{Binding Movement_To}"/>
+                            <TextBlock Text="{Binding Movement_Date}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
     </Grid>
 </Page>

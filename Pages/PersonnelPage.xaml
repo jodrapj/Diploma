@@ -9,6 +9,28 @@
       Title="PersonnelPage">
 
     <Grid>
-        
+        <ListView x:Name="PersonnelList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="2">
+                        <StackPanel Margin="5">
+                            <TextBlock Text="{Binding Personnel_ID}"/>
+                            <TextBlock Text="{Binding Personnel_Name}"/>
+                            <TextBlock Text="{Binding Personnel_MiddleName}"/>
+                            <TextBlock Text="{Binding Personnel_LastName}"/>
+                            <TextBlock Text="{Binding Personnel_PhoneNumber}"/>
+                            <TextBlock Text="{Binding Personnel_Address}"/>
+                            <TextBlock Text="{Binding Personnel_Title}"/>
+                            <TextBlock Text="{Binding Personnel_Status}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
     </Grid>
 </Page>

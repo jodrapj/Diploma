@@ -12,17 +12,35 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PRKTK030225.Classes;
+using PRKTK030225.res;
 
 namespace PRKTK030225.Pages
 {
     /// <summary>
     /// Логика взаимодействия для PersonnelPage.xaml
     /// </summary>
-    public partial class PersonnelPage : Page
+    public partial class PersonnelPage : Page, AddEditRemove<Personnel>
     {
         public PersonnelPage()
         {
             InitializeComponent();
+            PersonnelList.ItemsSource = Connect.context.Personnel.ToList();
+        }
+
+        public void Add()
+        {
+            Data.MFrame.Navigate(new AddEdit.AddEditPersonnel());
+        }
+
+        public void Edit(Personnel item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Remove(Personnel[] items)
+        {
+            throw new NotImplementedException();
         }
     }
 }

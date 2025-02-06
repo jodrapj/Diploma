@@ -9,6 +9,25 @@
       Title="SuppliersPage">
 
     <Grid>
-        
+        <ListView x:Name="SuppliersList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="2">
+                        <StackPanel Margin="5">
+                            <TextBlock Text="{Binding Supplier_ID}"/>
+                            <TextBlock Text="{Binding Supplier_OrgName}"/>
+                            <TextBlock Text="{Binding Supplier_FullName}"/>
+                            <TextBlock Text="{Binding Supplier_Phone}"/>
+                            <TextBlock Text="{Binding Supplier_Address}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
     </Grid>
 </Page>
