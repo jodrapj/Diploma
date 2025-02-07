@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\obj\Debug\
+C:\Users\Student.DESKTOP-QKGSV6O\Documents\Diploma\obj\Debug\
 PRKTK030225
 none
 false
 DEBUG;TRACE
-C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\App.xaml
+C:\Users\Student.DESKTOP-QKGSV6O\Documents\Diploma\App.xaml
 151720904776
 61340430179
-341425779722
-18-249365485
+35-947409453
+181198883667
 MainWindow.xaml;Pages\AddEdit\AddEditHardware.xaml;Pages\AddEdit\AddEditMovement.xaml;Pages\AddEdit\AddEditPersonnel.xaml;Pages\AddEdit\AddEditRepair.xaml;Pages\AddEdit\AddEditSuppliers.xaml;Pages\HardwarePage.xaml;Pages\MainPage.xaml;Pages\MovementPage.xaml;Pages\PersonnelPage.xaml;Pages\RepairPage.xaml;Pages\SuppliersPage.xaml;Windows\AuthWindow.xaml;Windows\MainAccessWindow.xaml;Windows\ProgressBarWindow.xaml;
 
-False
+True
 
