@@ -33,14 +33,27 @@ namespace PRKTK030225.Pages
             Data.MFrame.Navigate(new AddEdit.AddEditRepair());
         }
 
-        public void Edit(Repair item)
+        public void Edit()
         {
-            throw new NotImplementedException();
+            Data.MFrame.Navigate(new AddEdit.AddEditRepair(RepairList.SelectedItem as Repair));
         }
 
-        public void Remove(Repair[] items)
+        private void Update()
         {
-            throw new NotImplementedException();
+            RepairList.ItemsSource = Connect.context.Repair.ToList();
+        }
+
+        public void Remove()
+        {
+            if (MessageBox.Show($"Вы уверены что хотите удалить {RepairList.SelectedItems.Count} записей?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                Connect.context.Repair.RemoveRange(RepairList.SelectedItems as List<Repair>);
+            Connect.context.SaveChanges();
+            Update();
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            RepairList.ItemsSource = Connect.context.Repair.ToList();
         }
     }
 }

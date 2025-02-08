@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:PRKTK030225.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="SuppliersPage">
+      Title="SuppliersPage" Loaded="Page_Loaded">
 
     <Grid>
         <ListView x:Name="SuppliersList">

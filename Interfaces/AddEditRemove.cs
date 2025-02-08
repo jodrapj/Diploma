@@ -9,7 +9,7 @@ namespace PRKTK030225
     public interface AddEditRemove<T>
     {
         void Add();
-        void Edit(T item);
-        void Remove(T[] items);
+        void Edit();
+        void Remove();
     }
 }

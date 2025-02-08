@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,22 +23,35 @@ namespace PRKTK030225.Pages.AddEdit
     /// </summary>
     public partial class AddEditHardware : Page
     {
-        public AddEditHardware()
+        Hardware context;
+        public AddEditHardware(Hardware context = null)
         {
             InitializeComponent();
+            if (context != null)
+            {
+                this.DataContext = context;
+                this.context = context;
+            } else
+            {
+                this.DataContext = new Hardware();
+            }
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            Hardware a = new Hardware();
-            a = this.DataContext as Hardware;
-            try
+            if (context == null)
             {
-                Connect.context.Hardware.Add(a);
-            } catch (Exception ex)
+                context = new Hardware();
+                context = this.DataContext as Hardware;
+                Connect.context.Hardware.Add(context);
+                Connect.context.SaveChanges();
+            } else
             {
-                MessageBox.Show(ex.Message);
+                var entity = Connect.context.Hardware.Find(context.HARD_ID);
+                Connect.context.Entry(entity).CurrentValues.SetValues(context);
             }
+            Connect.context.SaveChanges();
+            Data.MFrame.GoBack();
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)

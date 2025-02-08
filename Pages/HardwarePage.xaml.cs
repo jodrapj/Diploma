@@ -22,26 +22,48 @@ namespace PRKTK030225.Pages
     /// </summary>
     public partial class HardwarePage : Page, AddEditRemove<Hardware>
     {
-        public List<Hardware> lastState;
         public HardwarePage()
         {
             InitializeComponent();
-            HardList.ItemsSource = lastState = Connect.context.Hardware.ToList();
+            Update();
         }
 
         public void Add()
         {
             Data.MFrame.Navigate(new AddEdit.AddEditHardware());
+            Connect.context.SaveChanges();
         }
 
-        public void Edit(Hardware item)
+        public void Edit()
         {
-            throw new NotImplementedException();
+            Data.MFrame.Navigate(new AddEdit.AddEditHardware(HardList.SelectedItem as Hardware));
         }
 
-        public void Remove(Hardware[] items)
+        private void Update()
         {
-            throw new NotImplementedException();
+            HardList.ItemsSource = Connect.context.Hardware.ToList();
+        }
+
+        public void Remove()
+        {
+            foreach (var item in HardList.SelectedItems)
+            {
+                if (Connect.context.Movement.Find(item) != null || Connect.context.Repair.Find(item) != null
+                    || Connect.context.Suppliers.Find(item) != null)
+                {
+                    MessageBox.Show($"Один или несколько выбранных объектов содержатся в другой таблице");
+                    return;
+                }
+            }
+            if (MessageBox.Show($"Вы уверены что хотите удалить {HardList.SelectedItems.Count} записей?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                Connect.context.Hardware.RemoveRange(HardList.SelectedItems as List<Hardware>);
+            Connect.context.SaveChanges();
+            Update();
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            Update();
         }
     }
 }

@@ -91,12 +91,46 @@ namespace PRKTK030225.Windows
 
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
-
+            switch (currentPage)
+            {
+                case 1:
+                    hPage.Edit();
+                    break;
+                case 2:
+                    mPage.Edit();
+                    break;
+                case 3:
+                    pPage.Edit();
+                    break;
+                case 4:
+                    sPage.Edit();
+                    break;
+                case 5:
+                    rPage.Edit();
+                    break;
+            }
         }
 
         private void Remove_Click(object sender, RoutedEventArgs e)
         {
-
+            switch (currentPage)
+            {
+                case 1:
+                    hPage.Remove();
+                    break;
+                case 2:
+                    mPage.Remove();
+                    break;
+                case 3:
+                    pPage.Remove();
+                    break;
+                case 4:
+                    sPage.Remove();
+                    break;
+                case 5:
+                    rPage.Remove();
+                    break;
+            }
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)

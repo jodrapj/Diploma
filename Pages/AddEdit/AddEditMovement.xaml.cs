@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,15 +23,32 @@ namespace PRKTK030225.Pages.AddEdit
     /// </summary>
     public partial class AddEditMovement : Page
     {
-        public AddEditMovement()
+        Movement context;
+        public AddEditMovement(Movement context = null)
         {
             InitializeComponent();
+            if (context != null)
+            {
+                this.DataContext = context;
+                this.context = context;
+            }
         }
+
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            Movement a = new Movement();
-            a = this.DataContext as Movement;
-            Connect.context.Movement.Add(a);
+            if (context == null)
+            {
+                context = new Movement();
+                context = this.DataContext as Movement;
+                Connect.context.Movement.Add(context);
+            }
+            else
+            {
+                var entity = Connect.context.Movement.Find(context.Movement_ID);
+                Connect.context.Entry(entity).CurrentValues.SetValues(context);
+            }
+            Connect.context.SaveChanges();
+            Data.MFrame.GoBack();
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)

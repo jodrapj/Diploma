@@ -33,14 +33,26 @@ namespace PRKTK030225.Pages
             Data.MFrame.Navigate(new AddEdit.AddEditMovement());
         }
 
-        public void Edit(Movement item)
+        public void Edit()
         {
-            throw new NotImplementedException();
+            Data.MFrame.Navigate(new AddEdit.AddEditMovement(MoveList.SelectedItem as Movement));
+        }
+        private void Update()
+        {
+            MoveList.ItemsSource = Connect.context.Movement.ToList();
         }
 
-        public void Remove(Movement[] items)
+        public void Remove()
         {
-            throw new NotImplementedException();
+            if (MessageBox.Show($"Вы уверены что хотите удалить {MoveList.SelectedItems.Count} записей?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                Connect.context.Movement.RemoveRange(MoveList.SelectedItems as List<Movement>);
+            Connect.context.SaveChanges();
+            Update();
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            MoveList.ItemsSource = Connect.context.Movement.ToList();
         }
     }
 }

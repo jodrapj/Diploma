@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,16 +23,32 @@ namespace PRKTK030225.Pages.AddEdit
     /// </summary>
     public partial class AddEditSuppliers : Page
     {
-        public AddEditSuppliers()
+        Suppliers context;
+        public AddEditSuppliers(Suppliers context = null)
         {
             InitializeComponent();
+            if (context != null)
+            {
+                this.DataContext = context;
+                this.context = context;
+            }
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            Suppliers a = new Suppliers();
-            a = this.DataContext as Suppliers;
-            Connect.context.Suppliers.Add(a);
+            if (context == null)
+            {
+                context = new Suppliers();
+                context = this.DataContext as Suppliers;
+                Connect.context.Suppliers.Add(context);
+            }
+            else
+            {
+                var entity = Connect.context.Suppliers.Find(context.Supplier_ID);
+                Connect.context.Entry(entity).CurrentValues.SetValues(context);
+            }
+            Connect.context.SaveChanges();
+            Data.MFrame.GoBack();
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
