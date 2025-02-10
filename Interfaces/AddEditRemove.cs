@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PRKTK030225
 {
-    public interface AddEditRemove<T>
+    public interface AddEditRemove
     {
         void Add();
         void Edit();

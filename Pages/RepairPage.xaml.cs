@@ -20,7 +20,7 @@ namespace PRKTK030225.Pages
     /// <summary>
     /// Логика взаимодействия для RepairPage.xaml
     /// </summary>
-    public partial class RepairPage : Page, AddEditRemove<Repair>
+    public partial class RepairPage : Page, AddEditRemove
     {
         public RepairPage()
         {
@@ -45,7 +45,7 @@ namespace PRKTK030225.Pages
 
         public void Remove()
         {
-            if (MessageBox.Show($"Вы уверены что хотите удалить {RepairList.SelectedItems.Count} записей?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            if (MessageBox.Show($"Вы уверены что хотите удалить {RepairList.SelectedItems.Count} {Ext.NumDeclension(RepairList.SelectedItems.Count, "запись", "записей", "записи")}?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 Connect.context.Repair.RemoveRange(RepairList.SelectedItems as List<Repair>);
             Connect.context.SaveChanges();
             Update();

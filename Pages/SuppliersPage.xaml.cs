@@ -20,7 +20,7 @@ namespace PRKTK030225.Pages
     /// <summary>
     /// Логика взаимодействия для SuppliersPage.xaml
     /// </summary>
-    public partial class SuppliersPage : Page, AddEditRemove<Suppliers>
+    public partial class SuppliersPage : Page, AddEditRemove
     {
         public SuppliersPage()
         {
@@ -44,7 +44,7 @@ namespace PRKTK030225.Pages
 
         public void Remove()
         {
-            if (MessageBox.Show($"Вы уверены что хотите удалить {SuppliersList.SelectedItems.Count} записей?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            if (MessageBox.Show($"Вы уверены что хотите удалить {SuppliersList.SelectedItems.Count} {Ext.NumDeclension(SuppliersList.SelectedItems.Count, "запись", "записей", "записи")}?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 Connect.context.Suppliers.RemoveRange(SuppliersList.SelectedItems as List<Suppliers>);
             Connect.context.SaveChanges();
             Update();

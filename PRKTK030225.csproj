@@ -79,6 +79,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\Ext.cs" />
     <Compile Include="Interfaces\AddEditRemove.cs" />
     <Compile Include="Classes\Connect.cs" />
     <Compile Include="Pages\AddEdit\AddEditHardware.xaml.cs">
@@ -279,13 +280,6 @@
       <DependentUpon>MainDB.mdf</DependentUpon>
     </Content>
     <Resource Include="res\cross.png" />
-    <Content Include="res\MainDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="res\MainDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>MainDB.mdf</DependentUpon>
-    </Content>
     <Content Include="res\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>

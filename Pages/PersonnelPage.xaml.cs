@@ -20,7 +20,7 @@ namespace PRKTK030225.Pages
     /// <summary>
     /// Логика взаимодействия для PersonnelPage.xaml
     /// </summary>
-    public partial class PersonnelPage : Page, AddEditRemove<Personnel>
+    public partial class PersonnelPage : Page, AddEditRemove
     {
         public PersonnelPage()
         {
@@ -44,7 +44,7 @@ namespace PRKTK030225.Pages
 
         public void Remove()
         {
-            if (MessageBox.Show($"Вы уверены что хотите удалить {PersonnelList.SelectedItems.Count} записей?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            if (MessageBox.Show($"Вы уверены что хотите удалить {PersonnelList.SelectedItems.Count} {Ext.NumDeclension(PersonnelList.SelectedItems.Count, "запись", "записей", "записи")}?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 Connect.context.Personnel.RemoveRange(PersonnelList.SelectedItems as List<Personnel>);
             Connect.context.SaveChanges();
             Update();

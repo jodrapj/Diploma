@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using PRKTK030225.Classes;
 using PRKTK030225.res;
 
@@ -20,7 +10,7 @@ namespace PRKTK030225.Pages
     /// <summary>
     /// Логика взаимодействия для HardwarePage.xaml
     /// </summary>
-    public partial class HardwarePage : Page, AddEditRemove<Hardware>
+    public partial class HardwarePage : Page, AddEditRemove
     {
         public HardwarePage()
         {
@@ -37,6 +27,7 @@ namespace PRKTK030225.Pages
         public void Edit()
         {
             Data.MFrame.Navigate(new AddEdit.AddEditHardware(HardList.SelectedItem as Hardware));
+            Connect.context.SaveChanges();
         }
 
         private void Update()
@@ -46,16 +37,16 @@ namespace PRKTK030225.Pages
 
         public void Remove()
         {
-            foreach (var item in HardList.SelectedItems)
+            foreach (Hardware item in HardList.SelectedItems)
             {
-                if (Connect.context.Movement.Find(item) != null || Connect.context.Repair.Find(item) != null
-                    || Connect.context.Suppliers.Find(item) != null)
+                if (Connect.context.Movement.Find(item.HARD_ID) != null || Connect.context.Repair.Find(item.HARD_ID) != null
+                    || Connect.context.Suppliers.Find(item.HARD_ID) != null)
                 {
                     MessageBox.Show($"Один или несколько выбранных объектов содержатся в другой таблице");
                     return;
                 }
             }
-            if (MessageBox.Show($"Вы уверены что хотите удалить {HardList.SelectedItems.Count} записей?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            if (MessageBox.Show($"Вы уверены что хотите удалить {HardList.SelectedItems.Count} {Ext.NumDeclension(HardList.SelectedItems.Count, "запись", "записей", "записи")}?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 Connect.context.Hardware.RemoveRange(HardList.SelectedItems as List<Hardware>);
             Connect.context.SaveChanges();
             Update();

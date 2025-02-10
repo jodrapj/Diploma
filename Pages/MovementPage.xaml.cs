@@ -20,7 +20,7 @@ namespace PRKTK030225.Pages
     /// <summary>
     /// Логика взаимодействия для MovementPage.xaml
     /// </summary>
-    public partial class MovementPage : Page, AddEditRemove<Movement>
+    public partial class MovementPage : Page, AddEditRemove
     {
         public MovementPage()
         {
@@ -44,7 +44,7 @@ namespace PRKTK030225.Pages
 
         public void Remove()
         {
-            if (MessageBox.Show($"Вы уверены что хотите удалить {MoveList.SelectedItems.Count} записей?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            if (MessageBox.Show($"Вы уверены что хотите удалить {MoveList.SelectedItems.Count} {Ext.NumDeclension(MoveList.SelectedItems.Count, "запись", "записей", "записи")}?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 Connect.context.Movement.RemoveRange(MoveList.SelectedItems as List<Movement>);
             Connect.context.SaveChanges();
             Update();

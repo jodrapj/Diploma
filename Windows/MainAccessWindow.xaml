@@ -23,8 +23,8 @@
             </DockPanel>
             <Border VerticalAlignment="Bottom" HorizontalAlignment="Right" DockPanel.Dock="Bottom">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Margin="2" x:Name="VersionBox" Text="version placeholder"/>
-                    <TextBlock Margin="2" x:Name="LoginShowBox" Text="login placeholder"/>
+                    <TextBlock Margin="5" x:Name="VersionBox" Text="version placeholder"/>
+                    <TextBlock Margin="5" x:Name="LoginShowBox" Text="login placeholder"/>
                 </StackPanel>
             </Border>
             <Frame x:Name="MFrame" NavigationUIVisibility="Hidden"/>

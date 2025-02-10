@@ -34,8 +34,6 @@ C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Windows\ProgressBarW
 C:\Users\jod\source\repos\PRKTK030225\PRKTK030225\obj\Debug\Windows\ProgressBarWindow.baml
 C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\bin\Debug\MainDB.mdf
 C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\bin\Debug\MainDB_log.ldf
-C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\bin\Debug\res\MainDB.mdf
-C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\bin\Debug\res\MainDB_log.ldf
 C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\bin\Debug\PRKTK030225.exe.config
 C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\bin\Debug\PRKTK030225.exe
 C:\Users\Student.DESKTOP-QKGSV6O\Desktop\Diploma\bin\Debug\PRKTK030225.pdb
