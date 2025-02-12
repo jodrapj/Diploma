@@ -10,6 +10,6 @@ namespace PRKTK030225.Classes
     public class Data
     {
         public static Frame MFrame;
-        public static string version = "[05.02.2025 15:12]";
+        public static string version = "[12.02.2025 13:22]";
     }
 }
