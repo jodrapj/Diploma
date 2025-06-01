@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PRKTK030225.Windows"
         mc:Ignorable="d"
-        Title="AuthWindow" Height="450" Width="300" WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" MouseDown="Window_MouseDown"
+        Title="AuthWindow" Height="450" Width="300" ResizeMode="CanMinimize" MouseDown="Window_MouseDown" Closing="Window_Closing"
         WindowStartupLocation="CenterScreen">
     <Grid Background="{DynamicResource BorautoBlue}">
         <Border BorderBrush="#ffffff" BorderThickness="2"/>
@@ -14,8 +14,5 @@
             <PasswordBox Style="{StaticResource BasicPasswordBox}" Width="150" Margin="5" Height="30" FontSize="16" x:Name="P"/>
             <Button Style="{StaticResource BasicButton}" Content="Войти" Width="75" Margin="5" Height="25" Click="Login_Click"/>
         </StackPanel>
-        <Border BorderBrush="{x:Null}" Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" MouseDown="Image_MouseDown">
-            <TextBlock FontSize="35" TextWrapping="Wrap" Text="X" VerticalAlignment="Center" TextAlignment="Center"/>
-        </Border>
     </Grid>
 </Window>

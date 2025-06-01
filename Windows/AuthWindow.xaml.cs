@@ -20,6 +20,8 @@ namespace PRKTK030225.Windows
     /// </summary>
     public partial class AuthWindow : Window
     {
+        bool v1 = false;
+
         public AuthWindow()
         {
             InitializeComponent();
@@ -38,6 +40,7 @@ namespace PRKTK030225.Windows
             var a = Connect.context.Credentials.Where(x => x.LOGIN == L.Text && x.PASSWD == P.Password).ToList();
             if (a.Count != 0)
             {
+                v1 = true;
                 this.Close();
                 b.Close();
                 new MainAccessWindow(a[0].AccessLevel_ID, a[0].LOGIN).Show();
@@ -49,9 +52,13 @@ namespace PRKTK030225.Windows
             P.Password = "";
         }
 
-        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            Environment.Exit(0);
+            if (!v1)
+            {
+                e.Cancel = true;
+                Environment.Exit(0);
+            }
         }
     }
 }

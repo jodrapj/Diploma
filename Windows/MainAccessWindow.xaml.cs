@@ -4,6 +4,7 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using PRKTK030225.Classes;
 using PRKTK030225.Pages;
 using PRKTK030225.res;
@@ -18,6 +19,11 @@ namespace PRKTK030225.Windows
         ProgressBarWindow progressBarWindow;
         int? accessLevel;
         int currentPage = 0;
+
+        SolidColorBrush passiveButton = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#5e6cab"));
+        SolidColorBrush activeButton = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#4153a3"));
+
+        Button buffer = new Button();
 
         object[] pages = new object[5];
 
@@ -61,25 +67,40 @@ namespace PRKTK030225.Windows
         private void Hardware_Click(object sender, RoutedEventArgs e)
         {
             Data.MFrame.Navigate(pages[currentPage = 0]);
+            buffer.Background = passiveButton;
+            (sender as Button).Background = activeButton;
+            buffer = sender as Button;
         }
 
         private void Movement_Click(object sender, RoutedEventArgs e)
         {
             Data.MFrame.Navigate(pages[currentPage = 1]);
+            buffer.Background = passiveButton;
+            (sender as Button).Background = activeButton;
+            buffer = sender as Button;
         }
 
         private void Personnel_Click(object sender, RoutedEventArgs e)
         {
             Data.MFrame.Navigate(pages[currentPage = 2]);
+            buffer.Background = passiveButton;
+            (sender as Button).Background = activeButton;
+            buffer = sender as Button;
         }
 
         private void Repair_Click(object sender, RoutedEventArgs e)
         {
             Data.MFrame.Navigate(pages[currentPage = 3]);
+            buffer.Background = passiveButton;
+            (sender as Button).Background = activeButton;
+            buffer = sender as Button;
         }
         private void Suppliers_Click(object sender, RoutedEventArgs e)
         {
             Data.MFrame.Navigate(pages[currentPage = 4]);
+            buffer.Background = passiveButton;
+            (sender as Button).Background = activeButton;
+            buffer = sender as Button;
         }
 
         private void Edit_Click(object sender, RoutedEventArgs e)

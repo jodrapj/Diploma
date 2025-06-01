@@ -40,21 +40,12 @@
                 <Setter Property="BorderBrush" Value="#FFFFFF"/>
             </Style>
 
-            <Color x:Key="BABlue">#4257FF</Color>
+            <Color x:Key="BABlue">#3e4772</Color>
             <SolidColorBrush x:Key="BorautoBlue" Color="{StaticResource BABlue}"/>
 
-            <Color x:Key="BALightBlue">#67f</Color>
+            <Color x:Key="BALightBlue">#5e6cab</Color>
             <SolidColorBrush x:Key="BorautoLightBlue" Color="{StaticResource BALightBlue}"/>
-
-            <Color x:Key="BAPurple">#a050f0</Color>
-            <SolidColorBrush x:Key="BorautoPurple" Color="{StaticResource BAPurple}"/>
-
-            <Color x:Key="BADarkPurple">#8e2fed</Color>
-            <SolidColorBrush x:Key="BorautoDarkPurple" Color="{StaticResource BADarkPurple}"/>
-
-            <Color x:Key="BABlack">#030303</Color>
-            <SolidColorBrush x:Key="BorautoBlack" Color="{StaticResource BABlack}"/>
-
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

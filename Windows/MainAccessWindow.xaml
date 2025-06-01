@@ -8,8 +8,8 @@
         Title="MainAccessWindow" Height="655" Width="1200" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid>
         <DockPanel LastChildFill="True" Background="{DynamicResource BorautoBlue}">
-            <DockPanel Width="200" Background="{DynamicResource BorautoBlue}">
-                <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" DockPanel.Dock="Top">
+            <DockPanel Width="150" Background="{DynamicResource BorautoBlue}">
+                <StackPanel x:Name="Sidepanel1" Orientation="Vertical" HorizontalAlignment="Stretch" DockPanel.Dock="Top">
                     <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Оборудование" Click="Hardware_Click"/>
                     <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Движения" Click="Movement_Click"/>
                     <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Персонал" Click="Personnel_Click"/>

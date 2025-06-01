@@ -9,25 +9,33 @@
       Title="MovementPage" Loaded="Page_Loaded">
 
     <Grid>
-        <ListView x:Name="MoveList">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Border BorderBrush="Black" BorderThickness="2">
-                        <StackPanel Margin="5">
-                            <TextBlock Text="{Binding Movement_ID}"/>
-                            <TextBlock Text="{Binding HARD_ID}"/>
-                            <TextBlock Text="{Binding Movement_From}"/>
-                            <TextBlock Text="{Binding Movement_To}"/>
-                            <TextBlock Text="{Binding Movement_Date}"/>
-                        </StackPanel>
-                    </Border>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-            <ListView.ItemContainerStyle>
-                <Style TargetType="ListBoxItem">
-                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <DataGrid x:Name="MoveList" Background="{DynamicResource BorautoLightBlue}" AutoGenerateColumns="False">
+            <DataGrid.ColumnHeaderStyle>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="BorderBrush" Value="#FFFFFF"/>
+                    <Setter Property="BorderThickness" Value="1"/>
+                    <Setter Property="Background" Value="{DynamicResource BorautoBlue}"/>
+                    <Setter Property="Foreground" Value="#ffffff"/>
                 </Style>
-            </ListView.ItemContainerStyle>
-        </ListView>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                    <Setter Property="Foreground" Value="#FFFFFF"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД" Binding="{Binding Movement_ID}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД оборудования" Binding="{Binding HARD_ID}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Движение ИЗ" Binding="{Binding Movement_From}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Движение В" Binding="{Binding Movement_To}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Дата движения" Binding="{Binding Movement_Date}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>

@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:PRKTK030225.Windows"
         mc:Ignorable="d"
         Title="ProgressBarWindow" Height="150" Width="250" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock x:Name="Hint" Height="25" Text="Placeholder" Margin="5"/>
-            <ProgressBar IsIndeterminate="True" Margin="5" Width="200" Height="20"/>
+    <Grid Background="{StaticResource BorautoBlue}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Background="{StaticResource BorautoBlue}">
+            <TextBlock Style="{StaticResource BasicText}" x:Name="Hint" Height="25" Text="Placeholder" Margin="5"/>
+            <ProgressBar Background="{StaticResource BorautoLightBlue}" IsIndeterminate="True" Margin="5" Width="200" Height="20"/>
         </StackPanel>
     </Grid>
 </Window>

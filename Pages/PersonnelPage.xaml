@@ -9,28 +9,36 @@
       Title="PersonnelPage" Loaded="Page_Loaded">
 
     <Grid>
-        <ListView x:Name="PersonnelList">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Border BorderBrush="Black" BorderThickness="2">
-                        <StackPanel Margin="5">
-                            <TextBlock Text="{Binding Personnel_ID}"/>
-                            <TextBlock Text="{Binding Personnel_Name}"/>
-                            <TextBlock Text="{Binding Personnel_MiddleName}"/>
-                            <TextBlock Text="{Binding Personnel_LastName}"/>
-                            <TextBlock Text="{Binding Personnel_PhoneNumber}"/>
-                            <TextBlock Text="{Binding Personnel_Address}"/>
-                            <TextBlock Text="{Binding Personnel_Title}"/>
-                            <TextBlock Text="{Binding Personnel_Status}"/>
-                        </StackPanel>
-                    </Border>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-            <ListView.ItemContainerStyle>
-                <Style TargetType="ListBoxItem">
-                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <DataGrid x:Name="PersonnelList" Background="{DynamicResource BorautoLightBlue}" AutoGenerateColumns="False">
+            <DataGrid.ColumnHeaderStyle>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="BorderBrush" Value="#FFFFFF"/>
+                    <Setter Property="BorderThickness" Value="1"/>
+                    <Setter Property="Background" Value="{DynamicResource BorautoBlue}"/>
+                    <Setter Property="Foreground" Value="#ffffff"/>
                 </Style>
-            </ListView.ItemContainerStyle>
-        </ListView>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                    <Setter Property="Foreground" Value="#FFFFFF"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД" Binding="{Binding Personnel_ID}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Имя" Binding="{Binding Personnel_Name}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Фамилия" Binding="{Binding Personnel_MiddleName}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Отчество" Binding="{Binding Personnel_LastName}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Номер телефона" Binding="{Binding Personnel_PhoneNumber}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Адрес проживания" Binding="{Binding Personnel_Address}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Должность" Binding="{Binding Personnel_Title}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Состояние" Binding="{Binding Personnel_Status}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>
