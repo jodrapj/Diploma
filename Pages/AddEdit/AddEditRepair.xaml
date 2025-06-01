@@ -9,23 +9,22 @@
       Title="AddEditRepair">
 
     <Grid>
-        <DockPanel LastChildFill="True" Width="500">
-            <StackPanel DockPanel.Dock="Left">
-                <TextBlock Text="HARD_ID" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
-                <TextBox Text="{Binding HARD_ID}" Width="150" Margin="5" Height="30"/>
-                <TextBlock Text="Repair_Man" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
-                <TextBox Text="{Binding Repair_Man}" Width="150" Margin="5" Height="30"/>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+                <TextBlock Style="{StaticResource BasicText}" Text="ИД Оборудования" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
+                <TextBlock Style="{StaticResource BasicText}" Text="Специалист" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
+                <TextBlock Style="{StaticResource BasicText}" Text="Состояние" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
+                <TextBlock Style="{StaticResource BasicText}" Text="Дата начала" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
+
+                <Button Style="{StaticResource BasicButton}" Content="Сохранить" Width="150" Height="30" Margin="5,45,5,5" Click="Save_Click"/>
+                <Button Style="{StaticResource BasicButton}" Content="Отмена" Width="150" Height="30" Margin="5" Click="Cancel_Click"/>
             </StackPanel>
             <StackPanel>
-                <TextBlock Text="Repair_Status" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
-                <TextBox Text="{Binding Repair_Status}" Width="150" Margin="5" Height="30"/>
-                <Button Content="Сохранить" Width="150" Height="30" Margin="5,45,5,5" Click="Save_Click"/>
-                <Button Content="Отмена" Width="150" Height="30" Margin="5" Click="Cancel_Click"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding HARD_ID}" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding Repair_Man}" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding Repair_Status}" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding Repair_date}" Width="150" Margin="5" Height="30"/>
             </StackPanel>
-            <StackPanel DockPanel.Dock="Right">
-                <TextBlock Text="Repair_date" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
-                <TextBox Text="{Binding Repair_date}" Width="150" Margin="5" Height="30"/>
-            </StackPanel>
-        </DockPanel>
+        </StackPanel>
     </Grid>
 </Page>

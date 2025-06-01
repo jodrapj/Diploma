@@ -7,13 +7,15 @@
         mc:Ignorable="d"
         Title="AuthWindow" Height="450" Width="300" WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" MouseDown="Window_MouseDown"
         WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Border BorderBrush="Black" BorderThickness="2"/>
-        <StackPanel VerticalAlignment="Center">
-            <TextBox Width="150" Margin="5" Height="30" FontSize="16" x:Name="L"/>
-            <PasswordBox Width="150" Margin="5" Height="30" FontSize="16" x:Name="P"/>
-            <Button Content="Войти" Width="75" Margin="5" Height="25" Click="Login_Click"/>
+    <Grid Background="{DynamicResource BorautoBlue}">
+        <Border BorderBrush="#ffffff" BorderThickness="2"/>
+        <StackPanel Background="{DynamicResource BorautoBlue}" VerticalAlignment="Center" Width="200">
+            <TextBox Style="{StaticResource BasicTextbox}" Width="150" Margin="5" Height="30" FontSize="16" x:Name="L"/>
+            <PasswordBox Style="{StaticResource BasicPasswordBox}" Width="150" Margin="5" Height="30" FontSize="16" x:Name="P"/>
+            <Button Style="{StaticResource BasicButton}" Content="Войти" Width="75" Margin="5" Height="25" Click="Login_Click"/>
         </StackPanel>
-        <Image Source="../res/cross.png" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" MouseDown="Image_MouseDown"/>
+        <Border BorderBrush="{x:Null}" Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" MouseDown="Image_MouseDown">
+            <TextBlock FontSize="35" TextWrapping="Wrap" Text="X" VerticalAlignment="Center" TextAlignment="Center"/>
+        </Border>
     </Grid>
 </Window>
