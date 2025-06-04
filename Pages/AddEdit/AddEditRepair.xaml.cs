@@ -23,8 +23,8 @@ namespace Diploma.Pages.AddEdit
     /// </summary>
     public partial class AddEditRepair : Page
     {
-        Repair context;
-        public AddEditRepair(Repair context = null)
+        repair context;
+        public AddEditRepair(repair context = null)
         {
             InitializeComponent();
             if (context != null)
@@ -33,7 +33,7 @@ namespace Diploma.Pages.AddEdit
                 this.context = context;
             } else
             {
-                this.DataContext = new Repair();
+                this.DataContext = new repair();
             }
         }
 
@@ -41,14 +41,14 @@ namespace Diploma.Pages.AddEdit
         {
             if (context == null)
             {
-                context = new Repair();
-                context = this.DataContext as Repair;
-                Connect.context.Repair.Add(context);
+                context = new repair();
+                context = this.DataContext as repair;
+                Connect.context.repair.Add(context);
                 Connect.context.SaveChanges();
             }
             else
             {
-                var entity = Connect.context.Repair.Find(context.Repair_ID);
+                var entity = Connect.context.repair.Find(context.repair_id);
                 Connect.context.Entry(entity).CurrentValues.SetValues(context);
             }
             Connect.context.SaveChanges();

@@ -1,8 +1,8 @@
 ﻿using System.Windows;
-using PRKTK030225.Classes;
-using PRKTK030225.Windows;
+using Diploma.Classes;
+using Diploma.Windows;
 
-namespace PRKTK030225
+namespace Diploma
 {
     public partial class MainWindow : Window
     {

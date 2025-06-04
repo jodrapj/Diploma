@@ -10,8 +10,8 @@ namespace Diploma.Pages.AddEdit
     /// </summary>
     public partial class AddEditPersonnel : Page
     {
-        Personnel context;
-        public AddEditPersonnel(Personnel context = null)
+        personnel context;
+        public AddEditPersonnel(personnel context = null)
         {
             InitializeComponent();
             if (context != null)
@@ -25,13 +25,13 @@ namespace Diploma.Pages.AddEdit
         {
             if (context == null)
             {
-                context = new Personnel();
-                context = this.DataContext as Personnel;
-                Connect.context.Personnel.Add(context);
+                context = new personnel();
+                context = this.DataContext as personnel;
+                Connect.context.personnel.Add(context);
             }
             else
             {
-                var entity = Connect.context.Personnel.Find(context.Personnel_ID);
+                var entity = Connect.context.personnel.Find(context.personnel_id);
                 Connect.context.Entry(entity).CurrentValues.SetValues(context);
             }
             Connect.context.SaveChanges();

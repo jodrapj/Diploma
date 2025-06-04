@@ -25,7 +25,7 @@ namespace Diploma.Pages
         public PersonnelPage()
         {
             InitializeComponent();
-            PersonnelList.ItemsSource = Connect.context.Personnel.ToList();
+            PersonnelList.ItemsSource = Connect.context.personnel.ToList();
         }
 
         public void Add()
@@ -35,24 +35,24 @@ namespace Diploma.Pages
 
         public void Edit()
         {
-            Data.MFrame.Navigate(new AddEdit.AddEditPersonnel(PersonnelList.SelectedItem as Personnel));
+            Data.MFrame.Navigate(new AddEdit.AddEditPersonnel(PersonnelList.SelectedItem as personnel));
         }
         private void Update()
         {
-            PersonnelList.ItemsSource = Connect.context.Personnel.ToList();
+            PersonnelList.ItemsSource = Connect.context.personnel.ToList();
         }
 
         public void Remove()
         {
             if (MessageBox.Show($"Вы уверены что хотите удалить {PersonnelList.SelectedItems.Count} {Ext.NumDeclension(PersonnelList.SelectedItems.Count, "запись", "записей", "записи")}?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
-                Connect.context.Personnel.RemoveRange(PersonnelList.SelectedItems as List<Personnel>);
+                Connect.context.personnel.RemoveRange(PersonnelList.SelectedItems as List<personnel>);
             Connect.context.SaveChanges();
             Update();
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            PersonnelList.ItemsSource = Connect.context.Personnel.ToList();
+            PersonnelList.ItemsSource = Connect.context.personnel.ToList();
         }
     }
 }

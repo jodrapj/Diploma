@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="department">
+      <EntityTypeMapping TypeName="Model.department">
+        <MappingFragment StoreEntitySet="department">
+          <ScalarProperty Name="department_id" ColumnName="department_id" />
+          <ScalarProperty Name="department_name" ColumnName="department_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hardtype">
+      <EntityTypeMapping TypeName="Model.hardtype">
+        <MappingFragment StoreEntitySet="hardtype">
+          <ScalarProperty Name="hardtype_id" ColumnName="hardtype_id" />
+          <ScalarProperty Name="hardtype_name" ColumnName="hardtype_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hardware">
+      <EntityTypeMapping TypeName="Model.hardware">
+        <MappingFragment StoreEntitySet="hardware">
+          <ScalarProperty Name="hard_id" ColumnName="hard_id" />
+          <ScalarProperty Name="hard_name" ColumnName="hard_name" />
+          <ScalarProperty Name="hard_model" ColumnName="hard_model" />
+          <ScalarProperty Name="hard_manufacturer" ColumnName="hard_manufacturer" />
+          <ScalarProperty Name="hardtype_id" ColumnName="hardtype_id" />
+          <ScalarProperty Name="personnel_id" ColumnName="personnel_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="movement">
+      <EntityTypeMapping TypeName="Model.movement">
+        <MappingFragment StoreEntitySet="movement">
+          <ScalarProperty Name="movement_id" ColumnName="movement_id" />
+          <ScalarProperty Name="movement_date" ColumnName="movement_date" />
+          <ScalarProperty Name="movement_from" ColumnName="movement_from" />
+          <ScalarProperty Name="movement_to" ColumnName="movement_to" />
+          <ScalarProperty Name="personnel_id" ColumnName="personnel_id" />
+          <ScalarProperty Name="hard_id" ColumnName="hard_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="personnel">
+      <EntityTypeMapping TypeName="Model.personnel">
+        <MappingFragment StoreEntitySet="personnel">
+          <ScalarProperty Name="personnel_id" ColumnName="personnel_id" />
+          <ScalarProperty Name="personnel_lastname" ColumnName="personnel_lastname" />
+          <ScalarProperty Name="personnel_name" ColumnName="personnel_name" />
+          <ScalarProperty Name="personnel_patronymic" ColumnName="personnel_patronymic" />
+          <ScalarProperty Name="personnel_phone" ColumnName="personnel_phone" />
+          <ScalarProperty Name="personnel_address" ColumnName="personnel_address" />
+          <ScalarProperty Name="department_id" ColumnName="department_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="repair">
+      <EntityTypeMapping TypeName="Model.repair">
+        <MappingFragment StoreEntitySet="repair">
+          <ScalarProperty Name="repair_id" ColumnName="repair_id" />
+          <ScalarProperty Name="repair_begindate" ColumnName="repair_begindate" />
+          <ScalarProperty Name="repair_enddate" ColumnName="repair_enddate" />
+          <ScalarProperty Name="repair_place" ColumnName="repair_place" />
+          <ScalarProperty Name="hard_id" ColumnName="hard_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="supplier">
+      <EntityTypeMapping TypeName="Model.supplier">
+        <MappingFragment StoreEntitySet="supplier">
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="supplier_orgname" ColumnName="supplier_orgname" />
+          <ScalarProperty Name="supplier_name" ColumnName="supplier_name" />
+          <ScalarProperty Name="supplier_phone" ColumnName="supplier_phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="supply">
+      <EntityTypeMapping TypeName="Model.supply">
+        <MappingFragment StoreEntitySet="supply">
+          <ScalarProperty Name="supply_id" ColumnName="supply_id" />
+          <ScalarProperty Name="supply_date" ColumnName="supply_date" />
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="hard_id" ColumnName="hard_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="writeoff">
+      <EntityTypeMapping TypeName="Model.writeoff">
+        <MappingFragment StoreEntitySet="writeoff">
+          <ScalarProperty Name="writeoff_id" ColumnName="writeoff_id" />
+          <ScalarProperty Name="writeoff_date" ColumnName="writeoff_date" />
+          <ScalarProperty Name="writeoff_reason" ColumnName="writeoff_reason" />
+          <ScalarProperty Name="hard_id" ColumnName="hard_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="access">
+      <EntityTypeMapping TypeName="Model.access">
+        <MappingFragment StoreEntitySet="access">
+          <ScalarProperty Name="access_level" ColumnName="access_level" />
+          <ScalarProperty Name="access_id" ColumnName="access_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="credentials">
+      <EntityTypeMapping TypeName="Model.credentials">
+        <MappingFragment StoreEntitySet="credentials">
+          <ScalarProperty Name="access_id" ColumnName="access_id" />
+          <ScalarProperty Name="cred_pass" ColumnName="cred_pass" />
+          <ScalarProperty Name="cred_user" ColumnName="cred_user" />
+          <ScalarProperty Name="cred_id" ColumnName="cred_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\maxwashere\source\repos\Diploma\obj\Debug\
+C:\Users\jodrapj\Desktop\Diploma\obj\Debug\
 Diploma
 none
 false
 DEBUG;TRACE
-C:\Users\maxwashere\source\repos\Diploma\App.xaml
-151720904776
-21505819134
-24-1946431569
-13-38814620
-MainWindow.xaml;Pages\AddEdit\AddEditHardware.xaml;Pages\AddEdit\AddEditMovement.xaml;Pages\AddEdit\AddEditPersonnel.xaml;Pages\AddEdit\AddEditRepair.xaml;Pages\AddEdit\AddEditSuppliers.xaml;Pages\HardwarePage.xaml;Pages\MainPage.xaml;Pages\MovementPage.xaml;Pages\PersonnelPage.xaml;Pages\RepairPage.xaml;Pages\SuppliersPage.xaml;Windows\AuthWindow.xaml;Windows\MainAccessWindow.xaml;Windows\ProgressBarWindow.xaml;
+C:\Users\jodrapj\Desktop\Diploma\App.xaml
+231434132947
+41529374329
+46-346013772
+18-1592250657
+MainWindow.xaml;Pages\AddEdit\AddEditDepartment.xaml;Pages\AddEdit\AddEditHardtype.xaml;Pages\AddEdit\AddEditHardware.xaml;Pages\AddEdit\AddEditMovement.xaml;Pages\AddEdit\AddEditPersonnel.xaml;Pages\AddEdit\AddEditRepair.xaml;Pages\AddEdit\AddEditSuppliers.xaml;Pages\AddEdit\AddEditSupply.xaml;Pages\AddEdit\AddEditWriteoff.xaml;Pages\DepartmentPage.xaml;Pages\HardtypePage.xaml;Pages\HardwarePage.xaml;Pages\MainPage.xaml;Pages\MovementPage.xaml;Pages\PersonnelPage.xaml;Pages\RepairPage1.xaml;Pages\SuppliersPage.xaml;Pages\SupplyPage.xaml;Pages\WriteoffPage.xaml;Windows\AuthWindow.xaml;Windows\MainAccessWindow.xaml;Windows\ProgressBarWindow.xaml;
 
-False
+True
 

@@ -38,7 +38,7 @@ namespace Diploma.Windows
             pages[0] = new HardwarePage();
             pages[1] = new MovementPage();
             pages[2] = new PersonnelPage();
-            pages[3] = new RepairPage();
+            pages[3] = new RepairPage1();
             pages[4] = new SuppliersPage();
         }
 

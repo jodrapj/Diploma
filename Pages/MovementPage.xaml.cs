@@ -25,7 +25,7 @@ namespace Diploma.Pages
         public MovementPage()
         {
             InitializeComponent();
-            MoveList.ItemsSource = Connect.context.Movement.ToList();
+            MoveList.ItemsSource = Connect.context.movement.ToList();
         }
 
         public void Add()
@@ -35,24 +35,24 @@ namespace Diploma.Pages
 
         public void Edit()
         {
-            Data.MFrame.Navigate(new AddEdit.AddEditMovement(MoveList.SelectedItem as Movement));
+            Data.MFrame.Navigate(new AddEdit.AddEditMovement(MoveList.SelectedItem as movement));
         }
         private void Update()
         {
-            MoveList.ItemsSource = Connect.context.Movement.ToList();
+            MoveList.ItemsSource = Connect.context.movement.ToList();
         }
 
         public void Remove()
         {
             if (MessageBox.Show($"Вы уверены что хотите удалить {MoveList.SelectedItems.Count} {Ext.NumDeclension(MoveList.SelectedItems.Count, "запись", "записей", "записи")}?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
-                Connect.context.Movement.RemoveRange(MoveList.SelectedItems as List<Movement>);
+                Connect.context.movement.RemoveRange(MoveList.SelectedItems as List<movement>);
             Connect.context.SaveChanges();
             Update();
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            MoveList.ItemsSource = Connect.context.Movement.ToList();
+            MoveList.ItemsSource = Connect.context.movement.ToList();
         }
     }
 }

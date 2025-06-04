@@ -25,7 +25,7 @@ namespace Diploma.Pages
         public SuppliersPage()
         {
             InitializeComponent();
-            SuppliersList.ItemsSource = Connect.context.Suppliers.ToList();
+            SuppliersList.ItemsSource = Connect.context.supplier.ToList();
         }
 
         public void Add()
@@ -35,24 +35,24 @@ namespace Diploma.Pages
 
         public void Edit()
         {
-            Data.MFrame.Navigate(new AddEdit.AddEditSuppliers(SuppliersList.SelectedItem as Suppliers));
+            Data.MFrame.Navigate(new AddEdit.AddEditSuppliers(SuppliersList.SelectedItem as supplier));
         }
         private void Update()
         {
-            SuppliersList.ItemsSource = Connect.context.Repair.ToList();
+            SuppliersList.ItemsSource = Connect.context.supplier.ToList();
         }
 
         public void Remove()
         {
             if (MessageBox.Show($"Вы уверены что хотите удалить {SuppliersList.SelectedItems.Count} {Ext.NumDeclension(SuppliersList.SelectedItems.Count, "запись", "записей", "записи")}?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
-                Connect.context.Suppliers.RemoveRange(SuppliersList.SelectedItems as List<Suppliers>);
+                Connect.context.supplier.RemoveRange(SuppliersList.SelectedItems as List<supplier>);
             Connect.context.SaveChanges();
             Update();
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            SuppliersList.ItemsSource = Connect.context.Suppliers.ToList();
+            SuppliersList.ItemsSource = Connect.context.supplier.ToList();
         }
     }
 }

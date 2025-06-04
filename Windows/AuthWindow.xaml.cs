@@ -37,13 +37,13 @@ namespace Diploma.Windows
         {
             var b = new Windows.ProgressBarWindow("Загрузка...", "Подождите");
             b.Show();
-            var a = Connect.context.Credentials.Where(x => x.LOGIN == L.Text && x.PASSWD == P.Password).ToList();
+            var a = Connect.context.credentials.Where(x => x.cred_user == L.Text && x.cred_pass == P.Password).ToList();
             if (a.Count != 0)
             {
                 v1 = true;
                 this.Close();
                 b.Close();
-                new MainAccessWindow(a[0].AccessLevel_ID, a[0].LOGIN).Show();
+                new MainAccessWindow((int)a[0].access_id, a[0].cred_user).Show();
                 return;
             }
 

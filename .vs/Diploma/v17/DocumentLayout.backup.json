@@ -1,118 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\",
+  "WorkspaceRootPath": "C:\\Users\\jodrapj\\Desktop\\Diploma\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Interfaces\\AddEditRemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Interfaces\\AddEditRemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\jodrapj\\Desktop\\Diploma\\windows\\authwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:windows\\authwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Classes\\Ext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\Ext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|c:\\users\\jodrapj\\desktop\\diploma\\windows\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:windows\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Classes\\Data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\Data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|c:\\users\\jodrapj\\desktop\\diploma\\pages\\writeoffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:pages\\writeoffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Classes\\Connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\Connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|c:\\users\\jodrapj\\desktop\\diploma\\pages\\departmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:pages\\departmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\maxwashere\\source\\repos\\Diploma\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\maxwashere\\source\\repos\\Diploma\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\maxwashere\\source\\repos\\Diploma\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\maxwashere\\source\\repos\\Diploma\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\maxwashere\\source\\repos\\Diploma\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\ProgressBarWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Windows\\ProgressBarWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\ProgressBarWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Windows\\ProgressBarWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\MainAccessWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Windows\\MainAccessWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\MainAccessWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Windows\\MainAccessWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\AuthWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Windows\\AuthWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\AuthWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Windows\\AuthWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\res\\cross.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:res\\cross.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\SuppliersPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\SuppliersPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\SuppliersPage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\SuppliersPage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\RepairPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\RepairPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\RepairPage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\RepairPage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\PersonnelPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\PersonnelPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\PersonnelPage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\PersonnelPage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\MovementPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\MovementPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\MovementPage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\MovementPage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\MainPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\MainPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\MainPage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\MainPage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\HardwarePage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\HardwarePage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\HardwarePage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\HardwarePage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|c:\\users\\jodrapj\\desktop\\diploma\\pages\\supplypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:pages\\supplypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -127,337 +35,65 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddEditRemove.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Interfaces\\AddEditRemove.cs",
-              "RelativeDocumentMoniker": "Interfaces\\AddEditRemove.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Interfaces\\AddEditRemove.cs",
-              "RelativeToolTip": "Interfaces\\AddEditRemove.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AuthWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Windows\\AuthWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\AuthWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Windows\\AuthWindow.xaml.cs",
+              "RelativeToolTip": "Windows\\AuthWindow.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAjwCcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:40:09.701Z",
+              "WhenOpened": "2025-06-04T18:47:56.273Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Ext.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Classes\\Ext.cs",
-              "RelativeDocumentMoniker": "Classes\\Ext.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Classes\\Ext.cs",
-              "RelativeToolTip": "Classes\\Ext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:40:09.551Z"
+              "Title": "AuthWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Windows\\AuthWindow.xaml",
+              "RelativeDocumentMoniker": "Windows\\AuthWindow.xaml",
+              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Windows\\AuthWindow.xaml",
+              "RelativeToolTip": "Windows\\AuthWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-04T20:25:16.93Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Data.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Classes\\Data.cs",
-              "RelativeDocumentMoniker": "Classes\\Data.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Classes\\Data.cs",
-              "RelativeToolTip": "Classes\\Data.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "WriteoffPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\WriteoffPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\WriteoffPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\WriteoffPage.xaml.cs",
+              "RelativeToolTip": "Pages\\WriteoffPage.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAIAywB4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:40:09.406Z"
+              "WhenOpened": "2025-06-04T20:21:55.624Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Connect.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Classes\\Connect.cs",
-              "RelativeDocumentMoniker": "Classes\\Connect.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Classes\\Connect.cs",
-              "RelativeToolTip": "Classes\\Connect.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:40:09.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:39:58.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\App.xaml",
-              "RelativeToolTip": "App.xaml",
+              "Title": "DepartmentPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\DepartmentPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\DepartmentPage.xaml",
+              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\DepartmentPage.xaml",
+              "RelativeToolTip": "Pages\\DepartmentPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T07:39:58.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-06-04T07:39:58.023Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProgressBarWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\ProgressBarWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Windows\\ProgressBarWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\ProgressBarWindow.xaml.cs",
-              "RelativeToolTip": "Windows\\ProgressBarWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:39:57.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProgressBarWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\ProgressBarWindow.xaml",
-              "RelativeDocumentMoniker": "Windows\\ProgressBarWindow.xaml",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\ProgressBarWindow.xaml",
-              "RelativeToolTip": "Windows\\ProgressBarWindow.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T07:39:57.769Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainAccessWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\MainAccessWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Windows\\MainAccessWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\MainAccessWindow.xaml.cs",
-              "RelativeToolTip": "Windows\\MainAccessWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:39:57.397Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MainAccessWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\MainAccessWindow.xaml",
-              "RelativeDocumentMoniker": "Windows\\MainAccessWindow.xaml",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\MainAccessWindow.xaml",
-              "RelativeToolTip": "Windows\\MainAccessWindow.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T07:39:57.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuthWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\AuthWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Windows\\AuthWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\AuthWindow.xaml.cs",
-              "RelativeToolTip": "Windows\\AuthWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:39:57.135Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AuthWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\AuthWindow.xaml",
-              "RelativeDocumentMoniker": "Windows\\AuthWindow.xaml",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Windows\\AuthWindow.xaml",
-              "RelativeToolTip": "Windows\\AuthWindow.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T07:39:57.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "cross.png - PNG [78x78, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\res\\cross.png",
-              "RelativeDocumentMoniker": "res\\cross.png",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\res\\cross.png - PNG [78x78, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
-              "RelativeToolTip": "res\\cross.png - PNG [78x78, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-06-04T07:39:56.793Z",
-              "EditorCaption": " - PNG [78x78, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SuppliersPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\SuppliersPage.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\SuppliersPage.xaml.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\SuppliersPage.xaml.cs",
-              "RelativeToolTip": "Pages\\SuppliersPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:39:56.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SuppliersPage.xaml",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\SuppliersPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\SuppliersPage.xaml",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\SuppliersPage.xaml",
-              "RelativeToolTip": "Pages\\SuppliersPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T07:39:56.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RepairPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\RepairPage.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\RepairPage.xaml.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\RepairPage.xaml.cs",
-              "RelativeToolTip": "Pages\\RepairPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:39:56.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RepairPage.xaml",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\RepairPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\RepairPage.xaml",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\RepairPage.xaml",
-              "RelativeToolTip": "Pages\\RepairPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T07:39:56.135Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "PersonnelPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\PersonnelPage.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\PersonnelPage.xaml.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\PersonnelPage.xaml.cs",
-              "RelativeToolTip": "Pages\\PersonnelPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:39:56.008Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "PersonnelPage.xaml",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\PersonnelPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\PersonnelPage.xaml",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\PersonnelPage.xaml",
-              "RelativeToolTip": "Pages\\PersonnelPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T07:39:55.891Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "MovementPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\MovementPage.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\MovementPage.xaml.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\MovementPage.xaml.cs",
-              "RelativeToolTip": "Pages\\MovementPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:39:55.755Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "MovementPage.xaml",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\MovementPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\MovementPage.xaml",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\MovementPage.xaml",
-              "RelativeToolTip": "Pages\\MovementPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T07:39:55.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\MainPage.xaml.cs",
-              "RelativeToolTip": "Pages\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:39:55.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\MainPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\MainPage.xaml",
-              "RelativeToolTip": "Pages\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T07:39:55.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "HardwarePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\HardwarePage.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\HardwarePage.xaml.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\HardwarePage.xaml.cs",
-              "RelativeToolTip": "Pages\\HardwarePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:39:55.26Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "HardwarePage.xaml",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\HardwarePage.xaml",
-              "RelativeDocumentMoniker": "Pages\\HardwarePage.xaml",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\Pages\\HardwarePage.xaml",
-              "RelativeToolTip": "Pages\\HardwarePage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T07:39:55.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T07:38:48.231Z"
+              "WhenOpened": "2025-06-04T20:21:46.879Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\maxwashere\\source\\repos\\Diploma\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "SupplyPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\SupplyPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\SupplyPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\SupplyPage.xaml.cs",
+              "RelativeToolTip": "Pages\\SupplyPage.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:38:47.754Z"
+              "WhenOpened": "2025-06-04T20:16:38.458Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -9,13 +9,13 @@ namespace Diploma.Classes
 {
     internal class Connect
     {
-        public static MainDBEntities c;
-        public static MainDBEntities context
+        public static Entities c;
+        public static Entities context
         {
             get
             {
                 if (c == null)
-                    c = new MainDBEntities();
+                    c = new Entities();
                 return c;
             }
         }

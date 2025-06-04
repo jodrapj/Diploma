@@ -23,8 +23,8 @@ namespace Diploma.Pages.AddEdit
     /// </summary>
     public partial class AddEditMovement : Page
     {
-        Movement context;
-        public AddEditMovement(Movement context = null)
+        movement context;
+        public AddEditMovement(movement context = null)
         {
             InitializeComponent();
             if (context != null)
@@ -33,7 +33,7 @@ namespace Diploma.Pages.AddEdit
                 this.context = context;
             } else
             {
-                this.DataContext = new Movement();
+                this.DataContext = new movement();
             }
         }
 
@@ -41,14 +41,14 @@ namespace Diploma.Pages.AddEdit
         {
             if (context == null)
             {
-                context = new Movement();
-                context = this.DataContext as Movement;
-                Connect.context.Movement.Add(context);
+                context = new movement();
+                context = this.DataContext as movement;
+                Connect.context.movement.Add(context);
                 Connect.context.SaveChanges();
             }
             else
             {
-                var entity = Connect.context.Movement.Find(context.Movement_ID);
+                var entity = Connect.context.movement.Find(context.movement_id);
                 Connect.context.Entry(entity).CurrentValues.SetValues(context);
             }
             Connect.context.SaveChanges();

@@ -23,8 +23,8 @@ namespace Diploma.Pages.AddEdit
     /// </summary>
     public partial class AddEditSuppliers : Page
     {
-        Suppliers context;
-        public AddEditSuppliers(Suppliers context = null)
+        supplier context;
+        public AddEditSuppliers(supplier context = null)
         {
             InitializeComponent();
             if (context != null)
@@ -38,13 +38,13 @@ namespace Diploma.Pages.AddEdit
         {
             if (context == null)
             {
-                context = new Suppliers();
-                context = this.DataContext as Suppliers;
-                Connect.context.Suppliers.Add(context);
+                context = new supplier();
+                context = this.DataContext as supplier;
+                Connect.context.supplier.Add(context);
             }
             else
             {
-                var entity = Connect.context.Suppliers.Find(context.Supplier_ID);
+                var entity = Connect.context.supplier.Find(context.supplier_id);
                 Connect.context.Entry(entity).CurrentValues.SetValues(context);
             }
             Connect.context.SaveChanges();

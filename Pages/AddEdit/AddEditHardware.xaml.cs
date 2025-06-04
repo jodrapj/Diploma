@@ -6,12 +6,12 @@ using Diploma.res;
 namespace Diploma.Pages.AddEdit
 {
     /// <summary>
-    /// Логика взаимодействия для AddEditHardware.xaml
+    /// Логика взаимодействия для AddEdithardware.xaml
     /// </summary>
     public partial class AddEditHardware : Page
     {
-        Hardware context;
-        public AddEditHardware(Hardware context = null)
+        hardware context;
+        public AddEditHardware(hardware context = null)
         {
             InitializeComponent();
             if (context != null)
@@ -20,7 +20,7 @@ namespace Diploma.Pages.AddEdit
                 this.context = context;
             } else
             {
-                this.DataContext = new Hardware();
+                this.DataContext = new hardware();
             }
         }
 
@@ -28,13 +28,13 @@ namespace Diploma.Pages.AddEdit
         {
             if (context == null)
             {
-                context = new Hardware();
-                context = this.DataContext as Hardware;
-                Connect.context.Hardware.Add(context);
+                context = new hardware();
+                context = this.DataContext as hardware;
+                Connect.context.hardware.Add(context);
                 Connect.context.SaveChanges();
             } else
             {
-                var entity = Connect.context.Hardware.Find(context.HARD_ID);
+                var entity = Connect.context.hardware.Find(context.hard_id);
                 Connect.context.Entry(entity).CurrentValues.SetValues(context);
             }
             Connect.context.SaveChanges();

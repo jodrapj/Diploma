@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a3eaf2a98f534b9d82e65d278b7d1dd8" Name="Diagram1" ZoomLevel="52">
+        <EntityTypeShape EntityType="Model.department" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.hardtype" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.hardware" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.movement" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.personnel" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.repair" Width="1.5" PointX="4.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.supplier" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.supply" Width="1.5" PointX="10.5" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.writeoff" Width="1.5" PointX="7.375" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_personnel_department" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_hardware_hardtype" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_hardware_personnel" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_movement_hardware" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_repair_hardware" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_supply_hardware" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_writeoff_hardware" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_movement_personnel" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_supply_supplier" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.access" Width="1.5" PointX="0.625" PointY="1" />
+        <EntityTypeShape EntityType="Model.credentials" Width="1.5" PointX="2.875" PointY="0.75" />
+        <AssociationConnector Association="Model.FK_credentials_access" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

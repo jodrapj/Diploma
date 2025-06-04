@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="department">
+    <Key>
+      <PropertyRef Name="department_id" />
+    </Key>
+    <Property Name="department_id" Type="Int32" Nullable="false" />
+    <Property Name="department_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="personnel" Relationship="Self.FK_personnel_department" FromRole="department" ToRole="personnel" />
+  </EntityType>
+  <EntityType Name="hardtype">
+    <Key>
+      <PropertyRef Name="hardtype_id" />
+    </Key>
+    <Property Name="hardtype_id" Type="Int32" Nullable="false" />
+    <Property Name="hardtype_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="hardware" Relationship="Self.FK_hardware_hardtype" FromRole="hardtype" ToRole="hardware" />
+  </EntityType>
+  <EntityType Name="hardware">
+    <Key>
+      <PropertyRef Name="hard_id" />
+    </Key>
+    <Property Name="hard_id" Type="Int32" Nullable="false" />
+    <Property Name="hard_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hard_model" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hard_manufacturer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hardtype_id" Type="Int32" />
+    <Property Name="personnel_id" Type="Int32" />
+    <NavigationProperty Name="hardtype" Relationship="Self.FK_hardware_hardtype" FromRole="hardware" ToRole="hardtype" />
+    <NavigationProperty Name="personnel" Relationship="Self.FK_hardware_personnel" FromRole="hardware" ToRole="personnel" />
+    <NavigationProperty Name="movement" Relationship="Self.FK_movement_hardware" FromRole="hardware" ToRole="movement" />
+    <NavigationProperty Name="repair" Relationship="Self.FK_repair_hardware" FromRole="hardware" ToRole="repair" />
+    <NavigationProperty Name="supply" Relationship="Self.FK_supply_hardware" FromRole="hardware" ToRole="supply" />
+    <NavigationProperty Name="writeoff" Relationship="Self.FK_writeoff_hardware" FromRole="hardware" ToRole="writeoff" />
+  </EntityType>
+  <EntityType Name="movement">
+    <Key>
+      <PropertyRef Name="movement_id" />
+    </Key>
+    <Property Name="movement_id" Type="Int32" Nullable="false" />
+    <Property Name="movement_date" Type="DateTime" Precision="0" />
+    <Property Name="movement_from" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="movement_to" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="personnel_id" Type="Int32" />
+    <Property Name="hard_id" Type="Int32" />
+    <NavigationProperty Name="hardware" Relationship="Self.FK_movement_hardware" FromRole="movement" ToRole="hardware" />
+    <NavigationProperty Name="personnel" Relationship="Self.FK_movement_personnel" FromRole="movement" ToRole="personnel" />
+  </EntityType>
+  <EntityType Name="personnel">
+    <Key>
+      <PropertyRef Name="personnel_id" />
+    </Key>
+    <Property Name="personnel_id" Type="Int32" Nullable="false" />
+    <Property Name="personnel_lastname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="personnel_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="personnel_patronymic" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="personnel_phone" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="personnel_address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="department_id" Type="Int32" />
+    <NavigationProperty Name="department" Relationship="Self.FK_personnel_department" FromRole="personnel" ToRole="department" />
+    <NavigationProperty Name="hardware" Relationship="Self.FK_hardware_personnel" FromRole="personnel" ToRole="hardware" />
+    <NavigationProperty Name="movement" Relationship="Self.FK_movement_personnel" FromRole="personnel" ToRole="movement" />
+  </EntityType>
+  <EntityType Name="repair">
+    <Key>
+      <PropertyRef Name="repair_id" />
+    </Key>
+    <Property Name="repair_id" Type="Int32" Nullable="false" />
+    <Property Name="repair_begindate" Type="DateTime" Precision="0" />
+    <Property Name="repair_enddate" Type="DateTime" Precision="0" />
+    <Property Name="repair_place" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hard_id" Type="Int32" />
+    <NavigationProperty Name="hardware" Relationship="Self.FK_repair_hardware" FromRole="repair" ToRole="hardware" />
+  </EntityType>
+  <EntityType Name="supplier">
+    <Key>
+      <PropertyRef Name="supplier_id" />
+    </Key>
+    <Property Name="supplier_id" Type="Int32" Nullable="false" />
+    <Property Name="supplier_orgname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="supplier_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="supplier_phone" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="supply" Relationship="Self.FK_supply_supplier" FromRole="supplier" ToRole="supply" />
+  </EntityType>
+  <EntityType Name="supply">
+    <Key>
+      <PropertyRef Name="supply_id" />
+    </Key>
+    <Property Name="supply_id" Type="Int32" Nullable="false" />
+    <Property Name="supply_date" Type="DateTime" Precision="0" />
+    <Property Name="supplier_id" Type="Int32" />
+    <Property Name="hard_id" Type="Int32" />
+    <NavigationProperty Name="hardware" Relationship="Self.FK_supply_hardware" FromRole="supply" ToRole="hardware" />
+    <NavigationProperty Name="supplier" Relationship="Self.FK_supply_supplier" FromRole="supply" ToRole="supplier" />
+  </EntityType>
+  <EntityType Name="writeoff">
+    <Key>
+      <PropertyRef Name="writeoff_id" />
+    </Key>
+    <Property Name="writeoff_id" Type="Int32" Nullable="false" />
+    <Property Name="writeoff_date" Type="DateTime" Precision="0" />
+    <Property Name="writeoff_reason" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hard_id" Type="Int32" />
+    <NavigationProperty Name="hardware" Relationship="Self.FK_writeoff_hardware" FromRole="writeoff" ToRole="hardware" />
+  </EntityType>
+  <Association Name="FK_personnel_department">
+    <End Role="department" Type="Self.department" Multiplicity="0..1" />
+    <End Role="personnel" Type="Self.personnel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="department">
+        <PropertyRef Name="department_id" />
+      </Principal>
+      <Dependent Role="personnel">
+        <PropertyRef Name="department_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_hardware_hardtype">
+    <End Role="hardtype" Type="Self.hardtype" Multiplicity="0..1" />
+    <End Role="hardware" Type="Self.hardware" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hardtype">
+        <PropertyRef Name="hardtype_id" />
+      </Principal>
+      <Dependent Role="hardware">
+        <PropertyRef Name="hardtype_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_hardware_personnel">
+    <End Role="personnel" Type="Self.personnel" Multiplicity="0..1" />
+    <End Role="hardware" Type="Self.hardware" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="personnel">
+        <PropertyRef Name="personnel_id" />
+      </Principal>
+      <Dependent Role="hardware">
+        <PropertyRef Name="personnel_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_movement_hardware">
+    <End Role="hardware" Type="Self.hardware" Multiplicity="0..1" />
+    <End Role="movement" Type="Self.movement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hardware">
+        <PropertyRef Name="hard_id" />
+      </Principal>
+      <Dependent Role="movement">
+        <PropertyRef Name="hard_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_repair_hardware">
+    <End Role="hardware" Type="Self.hardware" Multiplicity="0..1" />
+    <End Role="repair" Type="Self.repair" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hardware">
+        <PropertyRef Name="hard_id" />
+      </Principal>
+      <Dependent Role="repair">
+        <PropertyRef Name="hard_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_supply_hardware">
+    <End Role="hardware" Type="Self.hardware" Multiplicity="0..1" />
+    <End Role="supply" Type="Self.supply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hardware">
+        <PropertyRef Name="hard_id" />
+      </Principal>
+      <Dependent Role="supply">
+        <PropertyRef Name="hard_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_writeoff_hardware">
+    <End Role="hardware" Type="Self.hardware" Multiplicity="0..1" />
+    <End Role="writeoff" Type="Self.writeoff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hardware">
+        <PropertyRef Name="hard_id" />
+      </Principal>
+      <Dependent Role="writeoff">
+        <PropertyRef Name="hard_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_movement_personnel">
+    <End Role="personnel" Type="Self.personnel" Multiplicity="0..1" />
+    <End Role="movement" Type="Self.movement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="personnel">
+        <PropertyRef Name="personnel_id" />
+      </Principal>
+      <Dependent Role="movement">
+        <PropertyRef Name="personnel_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_supply_supplier">
+    <End Role="supplier" Type="Self.supplier" Multiplicity="0..1" />
+    <End Role="supply" Type="Self.supply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="supplier">
+        <PropertyRef Name="supplier_id" />
+      </Principal>
+      <Dependent Role="supply">
+        <PropertyRef Name="supplier_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="department" EntityType="Self.department" />
+    <EntitySet Name="hardtype" EntityType="Self.hardtype" />
+    <EntitySet Name="hardware" EntityType="Self.hardware" />
+    <EntitySet Name="movement" EntityType="Self.movement" />
+    <EntitySet Name="personnel" EntityType="Self.personnel" />
+    <EntitySet Name="repair" EntityType="Self.repair" />
+    <EntitySet Name="supplier" EntityType="Self.supplier" />
+    <EntitySet Name="supply" EntityType="Self.supply" />
+    <EntitySet Name="writeoff" EntityType="Self.writeoff" />
+    <AssociationSet Name="FK_personnel_department" Association="Self.FK_personnel_department">
+      <End Role="department" EntitySet="department" />
+      <End Role="personnel" EntitySet="personnel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_hardware_hardtype" Association="Self.FK_hardware_hardtype">
+      <End Role="hardtype" EntitySet="hardtype" />
+      <End Role="hardware" EntitySet="hardware" />
+    </AssociationSet>
+    <AssociationSet Name="FK_hardware_personnel" Association="Self.FK_hardware_personnel">
+      <End Role="personnel" EntitySet="personnel" />
+      <End Role="hardware" EntitySet="hardware" />
+    </AssociationSet>
+    <AssociationSet Name="FK_movement_hardware" Association="Self.FK_movement_hardware">
+      <End Role="hardware" EntitySet="hardware" />
+      <End Role="movement" EntitySet="movement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_repair_hardware" Association="Self.FK_repair_hardware">
+      <End Role="hardware" EntitySet="hardware" />
+      <End Role="repair" EntitySet="repair" />
+    </AssociationSet>
+    <AssociationSet Name="FK_supply_hardware" Association="Self.FK_supply_hardware">
+      <End Role="hardware" EntitySet="hardware" />
+      <End Role="supply" EntitySet="supply" />
+    </AssociationSet>
+    <AssociationSet Name="FK_writeoff_hardware" Association="Self.FK_writeoff_hardware">
+      <End Role="hardware" EntitySet="hardware" />
+      <End Role="writeoff" EntitySet="writeoff" />
+    </AssociationSet>
+    <AssociationSet Name="FK_movement_personnel" Association="Self.FK_movement_personnel">
+      <End Role="personnel" EntitySet="personnel" />
+      <End Role="movement" EntitySet="movement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_supply_supplier" Association="Self.FK_supply_supplier">
+      <End Role="supplier" EntitySet="supplier" />
+      <End Role="supply" EntitySet="supply" />
+    </AssociationSet>
+    <EntitySet Name="access" EntityType="Model.access" />
+    <EntitySet Name="credentials" EntityType="Model.credentials" />
+    <AssociationSet Name="FK_credentials_access" Association="Model.FK_credentials_access">
+      <End Role="access" EntitySet="access" />
+      <End Role="credentials" EntitySet="credentials" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="access">
+    <Key>
+      <PropertyRef Name="access_id" />
+    </Key>
+    <Property Name="access_id" Type="Int32" Nullable="false" />
+    <Property Name="access_level" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="credentials" Relationship="Model.FK_credentials_access" FromRole="access" ToRole="credentials" />
+  </EntityType>
+  <EntityType Name="credentials">
+    <Key>
+      <PropertyRef Name="cred_id" />
+    </Key>
+    <Property Name="cred_id" Type="Int32" Nullable="false" />
+    <Property Name="cred_user" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="cred_pass" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="access_id" Type="Int32" />
+    <NavigationProperty Name="access" Relationship="Model.FK_credentials_access" FromRole="credentials" ToRole="access" />
+  </EntityType>
+  <Association Name="FK_credentials_access">
+    <End Type="Model.access" Role="access" Multiplicity="0..1" />
+    <End Type="Model.credentials" Role="credentials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="access">
+        <PropertyRef Name="access_id" />
+      </Principal>
+      <Dependent Role="credentials">
+        <PropertyRef Name="access_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

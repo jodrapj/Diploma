@@ -32,13 +32,10 @@
             <DataGrid.Columns>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД" Binding="{Binding HARD_ID}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Название" Binding="{Binding HARD_NAME}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Состояние" Binding="{Binding HARD_STATUS}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД типа" Binding="{Binding HARDTYPE_ID}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД отв. лица" Binding="{Binding Personnel_ID}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД поставщика" Binding="{Binding Supplier_ID}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД посл. движения" Binding="{Binding Movement_ID}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД посл. ремонта" Binding="{Binding Repair_ID}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Кол-во" Binding="{Binding HARD_QUANTITY}"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Производитель" Binding="{Binding HARD_STATUS}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Модель" Binding="{Binding HARDTYPE_ID}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Тип" Binding="{Binding HARDTYPE_ID}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Отв. лицо" Binding="{Binding Personnel_ID}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
