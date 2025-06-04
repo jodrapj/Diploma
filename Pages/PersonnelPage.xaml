@@ -1,0 +1,44 @@
+﻿<Page x:Class="Diploma.Pages.PersonnelPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Diploma.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PersonnelPage" Loaded="Page_Loaded">
+
+    <Grid>
+        <DataGrid x:Name="PersonnelList" Background="{DynamicResource BorautoLightBlue}" AutoGenerateColumns="False">
+            <DataGrid.ColumnHeaderStyle>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="BorderBrush" Value="#FFFFFF"/>
+                    <Setter Property="BorderThickness" Value="1"/>
+                    <Setter Property="Background" Value="{DynamicResource BorautoBlue}"/>
+                    <Setter Property="Foreground" Value="#ffffff"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                    <Setter Property="Foreground" Value="#FFFFFF"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД" Binding="{Binding Personnel_ID}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Имя" Binding="{Binding Personnel_Name}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Фамилия" Binding="{Binding Personnel_MiddleName}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Отчество" Binding="{Binding Personnel_LastName}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Номер телефона" Binding="{Binding Personnel_PhoneNumber}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Адрес проживания" Binding="{Binding Personnel_Address}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Должность" Binding="{Binding Personnel_Title}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Состояние" Binding="{Binding Personnel_Status}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="Diploma.Windows.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diploma.Windows"
+        mc:Ignorable="d"
+        Title="AuthWindow" Height="450" Width="300" ResizeMode="CanMinimize" MouseDown="Window_MouseDown" Closing="Window_Closing"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="{DynamicResource BorautoBlue}">
+        <Border BorderBrush="#ffffff" BorderThickness="2"/>
+        <StackPanel Background="{DynamicResource BorautoBlue}" VerticalAlignment="Center" Width="200">
+            <TextBox Style="{StaticResource BasicTextbox}" Width="150" Margin="5" Height="30" FontSize="16" x:Name="L"/>
+            <PasswordBox Style="{StaticResource BasicPasswordBox}" Width="150" Margin="5" Height="30" FontSize="16" x:Name="P"/>
+            <Button Style="{StaticResource BasicButton}" Content="Войти" Width="75" Margin="5" Height="25" Click="Login_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

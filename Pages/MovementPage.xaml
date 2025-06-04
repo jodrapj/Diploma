@@ -1,0 +1,41 @@
+﻿<Page x:Class="Diploma.Pages.MovementPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Diploma.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MovementPage" Loaded="Page_Loaded">
+
+    <Grid>
+        <DataGrid x:Name="MoveList" Background="{DynamicResource BorautoLightBlue}" AutoGenerateColumns="False">
+            <DataGrid.ColumnHeaderStyle>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="BorderBrush" Value="#FFFFFF"/>
+                    <Setter Property="BorderThickness" Value="1"/>
+                    <Setter Property="Background" Value="{DynamicResource BorautoBlue}"/>
+                    <Setter Property="Foreground" Value="#ffffff"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                    <Setter Property="Foreground" Value="#FFFFFF"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД" Binding="{Binding Movement_ID}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД оборудования" Binding="{Binding HARD_ID}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Движение ИЗ" Binding="{Binding Movement_From}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Движение В" Binding="{Binding Movement_To}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Дата движения" Binding="{Binding Movement_Date}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
