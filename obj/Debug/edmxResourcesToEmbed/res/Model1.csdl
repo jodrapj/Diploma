@@ -60,6 +60,7 @@
     <NavigationProperty Name="department" Relationship="Self.FK_personnel_department" FromRole="personnel" ToRole="department" />
     <NavigationProperty Name="hardware" Relationship="Self.FK_hardware_personnel" FromRole="personnel" ToRole="hardware" />
     <NavigationProperty Name="movement" Relationship="Self.FK_movement_personnel" FromRole="personnel" ToRole="movement" />
+    <Property Name="personnel_title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="repair">
     <Key>
@@ -81,6 +82,7 @@
     <Property Name="supplier_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="supplier_phone" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="supply" Relationship="Self.FK_supply_supplier" FromRole="supplier" ToRole="supply" />
+    <Property Name="supplier_address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="supply">
     <Key>
@@ -269,7 +271,7 @@
       <PropertyRef Name="access_id" />
     </Key>
     <Property Name="access_id" Type="Int32" Nullable="false" />
-    <Property Name="access_level" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="access_level" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="credentials" Relationship="Model.FK_credentials_access" FromRole="access" ToRole="credentials" />
   </EntityType>
   <EntityType Name="credentials">

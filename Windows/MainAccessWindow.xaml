@@ -11,11 +11,17 @@
             <DockPanel Width="150" Background="{DynamicResource BorautoBlue}">
                 <StackPanel x:Name="Sidepanel1" Orientation="Vertical" HorizontalAlignment="Stretch" DockPanel.Dock="Top">
                     <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Оборудование" Click="Hardware_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Движения" Click="Movement_Click"/>
+                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Типы оборудования" Click="Hardtype_Click"/>
                     <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Персонал" Click="Personnel_Click"/>
+                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Департаменты" Click="Department_Click"/>
                     <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Поставщики" Click="Suppliers_Click"/>
+                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5,10,5,5" Content="Движения" Click="Movement_Click"/>
+                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Списания" Click="Writeoff_Click"/>
+                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Поставки" Click="Supply_Click"/>
                     <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Ремонт" Click="Repair_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5,20,5,5" Content="Добавить" Click="Add_Click"/>
+                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5,10,5,5" Content="Пользователи" Click="Creds_Click"/>
+                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Уровни доступа" Click="Access_Click"/>
+                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5,10,5,5" Content="Добавить" Click="Add_Click"/>
                     <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Удалить" Click="Remove_Click"/>
                     <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Изменить" Click="Edit_Click"/>
                 </StackPanel>

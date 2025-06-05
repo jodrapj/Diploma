@@ -4,14 +4,14 @@
     <Key>
       <PropertyRef Name="access_id" />
     </Key>
-    <Property Name="access_id" Type="int" Nullable="false" />
-    <Property Name="access_level" Type="nvarchar(max)" />
+    <Property Name="access_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="access_level" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="credentials">
     <Key>
       <PropertyRef Name="cred_id" />
     </Key>
-    <Property Name="cred_id" Type="int" Nullable="false" />
+    <Property Name="cred_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="cred_user" Type="nvarchar" MaxLength="15" />
     <Property Name="cred_pass" Type="nvarchar(max)" />
     <Property Name="access_id" Type="int" />
@@ -60,6 +60,7 @@
     <Property Name="personnel_lastname" Type="nvarchar(max)" />
     <Property Name="personnel_name" Type="nvarchar(max)" />
     <Property Name="personnel_patronymic" Type="nvarchar(max)" />
+    <Property Name="personnel_title" Type="nvarchar(max)" />
     <Property Name="personnel_phone" Type="nvarchar" MaxLength="12" />
     <Property Name="personnel_address" Type="nvarchar(max)" />
     <Property Name="department_id" Type="int" />
@@ -82,6 +83,7 @@
     <Property Name="supplier_orgname" Type="nvarchar(max)" />
     <Property Name="supplier_name" Type="nvarchar(max)" />
     <Property Name="supplier_phone" Type="nvarchar" MaxLength="12" />
+    <Property Name="supplier_address" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="supply">
     <Key>

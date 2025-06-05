@@ -12,26 +12,20 @@
         <StackPanel Orientation="Horizontal">
             <StackPanel>
                 <TextBlock Style="{StaticResource BasicText}" Text="Название" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
-                <TextBlock Style="{StaticResource BasicText}" Text="Состояние" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
-                <TextBlock Style="{StaticResource BasicText}" Text="ИД типа" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
-                <TextBlock Style="{StaticResource BasicText}" Text="ИД отв. лица" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
-                <TextBlock Style="{StaticResource BasicText}" Text="ИД поставщика" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
-                <TextBlock Style="{StaticResource BasicText}" Text="ИД посл. движения" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
-                <TextBlock Style="{StaticResource BasicText}" Text="ИД посл. ремонта" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
-                <TextBlock Style="{StaticResource BasicText}" Text="Количество" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
-
+                <TextBlock Style="{StaticResource BasicText}" Text="Производитель" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
+                <TextBlock Style="{StaticResource BasicText}" Text="Модель" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
+                <TextBlock Style="{StaticResource BasicText}" Text="Тип" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
+                <TextBlock Style="{StaticResource BasicText}" Text="Отв. лицо" TextAlignment="Center" FontSize="16" Width="150" Margin="5" Height="30"/>
+                
                 <Button Style="{StaticResource BasicButton}" Content="Сохранить" Width="150" Height="30" Margin="5,50,5,5" Click="Save_Click"/>
                 <Button Style="{StaticResource BasicButton}" Content="Отмена" Width="150" Height="30" Margin="5" Click="Cancel_Click"/>
             </StackPanel>
             <StackPanel>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding HARD_NAME}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding HARD_STATUS}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding HARDTYPE_ID}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding Personnel_ID}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding Supplier_ID}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding Movement_ID}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding Repair_ID}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding HARD_QUANTITY}" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding hard_name}" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding hard_manufacturer}" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding hard_model}" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding hardtype_id}" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding personnel_id}" Width="150" Margin="5" Height="30"/>
             </StackPanel>
         </StackPanel>
     </Grid>

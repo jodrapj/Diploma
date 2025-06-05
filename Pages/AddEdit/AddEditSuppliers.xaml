@@ -20,10 +20,10 @@
                 <Button Style="{StaticResource BasicButton}" Content="Отмена" Width="150" Height="30" Margin="5" Click="Cancel_Click"/>
             </StackPanel>
             <StackPanel>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding Supplier_OrgName}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding Supplier_FullName}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding Supplier_Phone}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding Supplier_Address }" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding supplier_orgname}" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding supplier_name}" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding supplier_phone}" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding supplier_address}" Width="150" Margin="5" Height="30"/>
             </StackPanel>
         </StackPanel>
     </Grid>

@@ -12,6 +12,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Diploma.Pages
@@ -19,7 +20,7 @@ namespace Diploma.Pages
     /// <summary>
     /// Логика взаимодействия для RepairPage1.xaml
     /// </summary>
-    public partial class RepairPage1 : Window, AddEditRemove
+    public partial class RepairPage1 : Page, AddEditRemove
     {
         public RepairPage1()
         {

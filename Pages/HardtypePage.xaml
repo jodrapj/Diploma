@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Diploma.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="HardtypePage">
+      Title="HardtypePage" Loaded="Page_Loaded">
 
     <Grid>
         <DataGrid x:Name="TypeList" Background="{DynamicResource BorautoLightBlue}" AutoGenerateColumns="False">

@@ -9,14 +9,14 @@
           <Key>
             <PropertyRef Name="access_id" />
           </Key>
-          <Property Name="access_id" Type="int" Nullable="false" />
-          <Property Name="access_level" Type="nvarchar(max)" />
+          <Property Name="access_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="access_level" Type="nvarchar(max)" Nullable="false" />
         </EntityType>
         <EntityType Name="credentials">
           <Key>
             <PropertyRef Name="cred_id" />
           </Key>
-          <Property Name="cred_id" Type="int" Nullable="false" />
+          <Property Name="cred_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="cred_user" Type="nvarchar" MaxLength="15" />
           <Property Name="cred_pass" Type="nvarchar(max)" />
           <Property Name="access_id" Type="int" />
@@ -65,6 +65,7 @@
           <Property Name="personnel_lastname" Type="nvarchar(max)" />
           <Property Name="personnel_name" Type="nvarchar(max)" />
           <Property Name="personnel_patronymic" Type="nvarchar(max)" />
+          <Property Name="personnel_title" Type="nvarchar(max)" />
           <Property Name="personnel_phone" Type="nvarchar" MaxLength="12" />
           <Property Name="personnel_address" Type="nvarchar(max)" />
           <Property Name="department_id" Type="int" />
@@ -87,6 +88,7 @@
           <Property Name="supplier_orgname" Type="nvarchar(max)" />
           <Property Name="supplier_name" Type="nvarchar(max)" />
           <Property Name="supplier_phone" Type="nvarchar" MaxLength="12" />
+          <Property Name="supplier_address" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="supply">
           <Key>
@@ -343,6 +345,7 @@
           <NavigationProperty Name="department" Relationship="Self.FK_personnel_department" FromRole="personnel" ToRole="department" />
           <NavigationProperty Name="hardware" Relationship="Self.FK_hardware_personnel" FromRole="personnel" ToRole="hardware" />
           <NavigationProperty Name="movement" Relationship="Self.FK_movement_personnel" FromRole="personnel" ToRole="movement" />
+          <Property Name="personnel_title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="repair">
           <Key>
@@ -364,6 +367,7 @@
           <Property Name="supplier_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="supplier_phone" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="supply" Relationship="Self.FK_supply_supplier" FromRole="supplier" ToRole="supply" />
+          <Property Name="supplier_address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="supply">
           <Key>
@@ -552,7 +556,7 @@
             <PropertyRef Name="access_id" />
           </Key>
           <Property Name="access_id" Type="Int32" Nullable="false" />
-          <Property Name="access_level" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="access_level" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="credentials" Relationship="Model.FK_credentials_access" FromRole="access" ToRole="credentials" />
         </EntityType>
         <EntityType Name="credentials">
@@ -626,6 +630,7 @@
           <EntitySetMapping Name="personnel">
             <EntityTypeMapping TypeName="Model.personnel">
               <MappingFragment StoreEntitySet="personnel">
+                <ScalarProperty Name="personnel_title" ColumnName="personnel_title" />
                 <ScalarProperty Name="personnel_id" ColumnName="personnel_id" />
                 <ScalarProperty Name="personnel_lastname" ColumnName="personnel_lastname" />
                 <ScalarProperty Name="personnel_name" ColumnName="personnel_name" />
@@ -650,6 +655,7 @@
           <EntitySetMapping Name="supplier">
             <EntityTypeMapping TypeName="Model.supplier">
               <MappingFragment StoreEntitySet="supplier">
+                <ScalarProperty Name="supplier_address" ColumnName="supplier_address" />
                 <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
                 <ScalarProperty Name="supplier_orgname" ColumnName="supplier_orgname" />
                 <ScalarProperty Name="supplier_name" ColumnName="supplier_name" />

@@ -1,4 +1,5 @@
-﻿using Diploma.res;
+﻿using Diploma.Classes;
+using Diploma.res;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +22,42 @@ namespace Diploma.Pages.AddEdit
     /// </summary>
     public partial class AddEditSupply : Page
     {
-        public AddEditSupply(supply supply = null)
+        supply context;
+        public AddEditSupply(supply context = null)
         {
             InitializeComponent();
+            if (context != null)
+            {
+                this.DataContext = context;
+                this.context = context;
+            }
+            else
+            {
+                this.DataContext = new supply();
+            }
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            if (context == null)
+            {
+                context = new supply();
+                context = this.DataContext as supply;
+                Connect.context.supply.Add(context);
+                Connect.context.SaveChanges();
+            }
+            else
+            {
+                var entity = Connect.context.supply.Find(context.supply_id);
+                Connect.context.Entry(entity).CurrentValues.SetValues(context);
+            }
+            Connect.context.SaveChanges();
+            Data.MFrame.GoBack();
+        }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            Data.MFrame.GoBack();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Diploma.res;
+﻿using Diploma.Classes;
+using Diploma.res;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +22,42 @@ namespace Diploma.Pages.AddEdit
     /// </summary>
     public partial class AddEditHardtype : Page
     {
-        public AddEditHardtype(hardtype hardtype = null)
+        hardtype context;
+        public AddEditHardtype(hardtype context = null)
         {
             InitializeComponent();
+            if (context != null)
+            {
+                this.DataContext = context;
+                this.context = context;
+            }
+            else
+            {
+                this.DataContext = new hardtype();
+            }
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            if (context == null)
+            {
+                context = new hardtype();
+                context = this.DataContext as hardtype;
+                Connect.context.hardtype.Add(context);
+                Connect.context.SaveChanges();
+            }
+            else
+            {
+                var entity = Connect.context.hardtype.Find(context.hardtype_id);
+                Connect.context.Entry(entity).CurrentValues.SetValues(context);
+            }
+            Connect.context.SaveChanges();
+            Data.MFrame.GoBack();
+        }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            Data.MFrame.GoBack();
         }
     }
 }

@@ -9,6 +9,16 @@
       Title="AddEditDepartment">
 
     <Grid>
-        
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+                <TextBlock Style="{StaticResource BasicText}" TextWrapping="WrapWithOverflow" Text="Наименование департамента" TextAlignment="Center" FontSize="14" Width="150" Margin="5" Height="36"/>
+
+                <Button Style="{StaticResource BasicButton}" Content="Сохранить" Width="150" Height="30" Margin="5,50,5,5" Click="Save_Click"/>
+                <Button Style="{StaticResource BasicButton}" Content="Отмена" Width="150" Height="30" Margin="5" Click="Cancel_Click"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding department_name}" Width="150" Margin="5" Height="36"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>

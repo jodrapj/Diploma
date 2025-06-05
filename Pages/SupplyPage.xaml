@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Diploma.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="SupplyPage">
+      Title="SupplyPage" Loaded="Page_Loaded">
 
     <Grid>
         <DataGrid x:Name="SupplyList" Background="{DynamicResource BorautoLightBlue}" AutoGenerateColumns="False">

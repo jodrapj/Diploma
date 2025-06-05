@@ -24,6 +24,7 @@ namespace Diploma.res
         public string supplier_orgname { get; set; }
         public string supplier_name { get; set; }
         public string supplier_phone { get; set; }
+        public string supplier_address { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<supply> supply { get; set; }

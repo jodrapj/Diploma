@@ -44,6 +44,7 @@
     <EntitySetMapping Name="personnel">
       <EntityTypeMapping TypeName="Model.personnel">
         <MappingFragment StoreEntitySet="personnel">
+          <ScalarProperty Name="personnel_title" ColumnName="personnel_title" />
           <ScalarProperty Name="personnel_id" ColumnName="personnel_id" />
           <ScalarProperty Name="personnel_lastname" ColumnName="personnel_lastname" />
           <ScalarProperty Name="personnel_name" ColumnName="personnel_name" />
@@ -68,6 +69,7 @@
     <EntitySetMapping Name="supplier">
       <EntityTypeMapping TypeName="Model.supplier">
         <MappingFragment StoreEntitySet="supplier">
+          <ScalarProperty Name="supplier_address" ColumnName="supplier_address" />
           <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
           <ScalarProperty Name="supplier_orgname" ColumnName="supplier_orgname" />
           <ScalarProperty Name="supplier_name" ColumnName="supplier_name" />

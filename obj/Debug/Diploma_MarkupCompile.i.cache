@@ -16,5 +16,5 @@ C:\Users\jodrapj\Desktop\Diploma\App.xaml
 18-1592250657
 MainWindow.xaml;Pages\AddEdit\AddEditDepartment.xaml;Pages\AddEdit\AddEditHardtype.xaml;Pages\AddEdit\AddEditHardware.xaml;Pages\AddEdit\AddEditMovement.xaml;Pages\AddEdit\AddEditPersonnel.xaml;Pages\AddEdit\AddEditRepair.xaml;Pages\AddEdit\AddEditSuppliers.xaml;Pages\AddEdit\AddEditSupply.xaml;Pages\AddEdit\AddEditWriteoff.xaml;Pages\DepartmentPage.xaml;Pages\HardtypePage.xaml;Pages\HardwarePage.xaml;Pages\MainPage.xaml;Pages\MovementPage.xaml;Pages\PersonnelPage.xaml;Pages\RepairPage1.xaml;Pages\SuppliersPage.xaml;Pages\SupplyPage.xaml;Pages\WriteoffPage.xaml;Windows\AuthWindow.xaml;Windows\MainAccessWindow.xaml;Windows\ProgressBarWindow.xaml;
 
-True
+False
 

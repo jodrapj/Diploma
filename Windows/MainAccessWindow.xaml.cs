@@ -25,7 +25,7 @@ namespace Diploma.Windows
 
         Button buffer = new Button();
 
-        object[] pages = new object[5];
+        object[] pages = new object[11];
 
         public MainAccessWindow(int accessLevel, string login)
         {
@@ -36,10 +36,16 @@ namespace Diploma.Windows
             LoginShowBox.Text = $"Вы вошли как: {login}";
             VersionBox.Text = Data.version;
             pages[0] = new HardwarePage();
-            pages[1] = new MovementPage();
+            pages[1] = new HardtypePage();
             pages[2] = new PersonnelPage();
-            pages[3] = new RepairPage1();
+            pages[3] = new DepartmentPage();
             pages[4] = new SuppliersPage();
+            pages[5] = new MovementPage();
+            pages[6] = new WriteoffPage();
+            pages[7] = new SupplyPage();
+            pages[8] = new RepairPage1();
+            pages[9] = new RepairPage1();
+            pages[10] = new RepairPage1();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -66,41 +72,57 @@ namespace Diploma.Windows
 
         private void Hardware_Click(object sender, RoutedEventArgs e)
         {
-            Data.MFrame.Navigate(pages[currentPage = 0]);
-            buffer.Background = passiveButton;
-            (sender as Button).Background = activeButton;
-            buffer = sender as Button;
+            ButtonHighlight(sender, 0);
         }
 
-        private void Movement_Click(object sender, RoutedEventArgs e)
+        private void Hardtype_Click(object sender, RoutedEventArgs e)
         {
-            Data.MFrame.Navigate(pages[currentPage = 1]);
-            buffer.Background = passiveButton;
-            (sender as Button).Background = activeButton;
-            buffer = sender as Button;
+            ButtonHighlight(sender, 1);
         }
 
         private void Personnel_Click(object sender, RoutedEventArgs e)
         {
-            Data.MFrame.Navigate(pages[currentPage = 2]);
-            buffer.Background = passiveButton;
-            (sender as Button).Background = activeButton;
-            buffer = sender as Button;
+            ButtonHighlight(sender, 2);
+        }
+
+        private void Department_Click(object sender, RoutedEventArgs e)
+        {
+            ButtonHighlight(sender, 3);
+        }
+
+        private void Suppliers_Click(object sender, RoutedEventArgs e)
+        {
+            ButtonHighlight(sender, 4);
+        }
+
+        private void Movement_Click(object sender, RoutedEventArgs e)
+        {
+            ButtonHighlight(sender, 5);
+        }
+
+        private void Writeoff_Click(object sender, RoutedEventArgs e)
+        {
+            ButtonHighlight(sender, 6);
+        }
+
+        private void Supply_Click(object sender, RoutedEventArgs e)
+        {
+            ButtonHighlight(sender, 7);
         }
 
         private void Repair_Click(object sender, RoutedEventArgs e)
         {
-            Data.MFrame.Navigate(pages[currentPage = 3]);
-            buffer.Background = passiveButton;
-            (sender as Button).Background = activeButton;
-            buffer = sender as Button;
+            ButtonHighlight(sender, 8);
         }
-        private void Suppliers_Click(object sender, RoutedEventArgs e)
+
+        private void Creds_Click(object sender, RoutedEventArgs e)
         {
-            Data.MFrame.Navigate(pages[currentPage = 4]);
-            buffer.Background = passiveButton;
-            (sender as Button).Background = activeButton;
-            buffer = sender as Button;
+            ButtonHighlight(sender, 9);
+        }
+
+        private void Access_Click(object sender, RoutedEventArgs e)
+        {
+            ButtonHighlight(sender, 10);
         }
 
         private void Edit_Click(object sender, RoutedEventArgs e)
@@ -116,6 +138,14 @@ namespace Diploma.Windows
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             (pages[currentPage]as AddEditRemove).Add();
+        }
+
+        private void ButtonHighlight(object sender, int pagenum)
+        {
+            Data.MFrame.Navigate(pages[currentPage = pagenum]);
+            buffer.Background = passiveButton;
+            (sender as Button).Background = activeButton;
+            buffer = sender as Button;
         }
     }
 }

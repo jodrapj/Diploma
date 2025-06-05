@@ -28,6 +28,7 @@ namespace Diploma.res
         public string personnel_phone { get; set; }
         public string personnel_address { get; set; }
         public Nullable<int> department_id { get; set; }
+        public string personnel_title { get; set; }
     
         public virtual department department { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
