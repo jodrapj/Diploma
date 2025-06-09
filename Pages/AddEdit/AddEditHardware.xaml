@@ -24,8 +24,26 @@
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding hard_name}" Width="150" Margin="5" Height="30"/>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding hard_manufacturer}" Width="150" Margin="5" Height="30"/>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding hard_model}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding hardtype_id}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding personnel_id}" Width="150" Margin="5" Height="30"/>
+                <ComboBox Style="{StaticResource BasicComboBox}" Height="30" Name="hardtypeBox" ItemsSource="{Binding hardtype}" Text="{Binding hardtype_name}" DisplayMemberPath="hardtype_name" SelectedValue="{Binding hardtype_id}" SelectedValuePath="hardtype_id">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem">
+                            <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                            <Setter Property="Foreground" Value="#FFFFFF"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="BorderBrush" Value="#FFFFFF"/>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
+                <ComboBox Style="{StaticResource BasicComboBox}" Height="30" Name="personnelBox" ItemsSource="{Binding personnel}" Text="{Binding personnel_lastname}" DisplayMemberPath="personnel_lastname" SelectedValue="{Binding personnel_id}" SelectedValuePath="personnel_id">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem">
+                            <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                            <Setter Property="Foreground" Value="#FFFFFF"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="BorderBrush" Value="#FFFFFF"/>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
             </StackPanel>
         </StackPanel>
     </Grid>

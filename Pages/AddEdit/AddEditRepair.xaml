@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:Diploma.Pages.AddEdit"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="AddEditRepair">
+      Title="AddEditRepair" Loaded="Page_Loaded"
+    xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
 
     <Grid>
         <StackPanel Orientation="Horizontal">
@@ -34,14 +35,14 @@
                         </Style>
                     </DatePicker.Resources>
                 </DatePicker>
-                <DatePicker Text="{Binding repair_enddate}" FontSize="16" Width="150" Margin="5" Height="30">
+                <DatePicker FontSize="16" Width="150" Margin="5" Height="30">
                     <DatePicker.Resources>
                         <Style TargetType="{x:Type DatePickerTextBox}">
                             <Setter Property="Control.Template">
                                 <Setter.Value>
                                     <ControlTemplate>
                                         <TextBox x:Name="PART_TextBox" 
-                            Text="{Binding Path=SelectedDate, RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" Background="{DynamicResource BorautoLightBlue}" Foreground="#FFFFFF" />
+                            Text="{Binding  Path=SelectedDate, RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" Background="{DynamicResource BorautoLightBlue}" Foreground="#FFFFFF" />
                                     </ControlTemplate>
                                 </Setter.Value>
                             </Setter>
@@ -49,8 +50,16 @@
                     </DatePicker.Resources>
                 </DatePicker>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding repair_place}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding hard_id}" Width="150" Margin="5" Height="30"/>
-                <ComboBox x:Name="hardwareBox"/>
+                <ComboBox Style="{StaticResource BasicComboBox}" Height="30" Name="hardwareBox" ItemsSource="{Binding hardware}" Text="{Binding hard_name}" DisplayMemberPath="hard_name" SelectedValue="{Binding hard_id}" SelectedValuePath="hard_id">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem">
+                            <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                            <Setter Property="Foreground" Value="#FFFFFF"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="BorderBrush" Value="#FFFFFF"/>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
             </StackPanel>
         </StackPanel>
     </Grid>

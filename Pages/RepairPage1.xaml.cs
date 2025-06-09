@@ -46,7 +46,7 @@ namespace Diploma.Pages
         public void Remove()
         {
             if (MessageBox.Show($"Вы уверены что хотите удалить {RepairList.SelectedItems.Count} {Ext.NumDeclension(RepairList.SelectedItems.Count, "запись", "записей", "записи")}?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
-                Connect.context.repair.RemoveRange(RepairList.SelectedItems as List<repair>);
+                Connect.context.repair.Remove(RepairList.SelectedItem as repair);
             Connect.context.SaveChanges();
             Update();
         }

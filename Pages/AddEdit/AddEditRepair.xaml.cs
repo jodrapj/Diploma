@@ -24,7 +24,6 @@ namespace Diploma.Pages.AddEdit
     public partial class AddEditRepair : Page
     {
         repair context;
-        HardBoxData[] data;
 
         public AddEditRepair(repair context = null)
         {
@@ -37,11 +36,7 @@ namespace Diploma.Pages.AddEdit
             {
                 this.DataContext = new repair();
             }
-            foreach (var item in Connect.context.hardware.ToList())
-            {
-                data[item.hard_id] = new HardBoxData(item.hard_name, item.hard_id);
-            }
-            hardwareBox.ItemsSource = data;
+            hardwareBox.ItemsSource = Connect.context.hardware.ToList();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
@@ -66,20 +61,9 @@ namespace Diploma.Pages.AddEdit
         {
             Data.MFrame.GoBack();
         }
-    }
 
-    class HardBoxData
-    {
-        public HardBoxData(string name, int id)
+        private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            this.name = name;
-            this.hard_id = id;
-        }
-        public string name { get; set; }
-        public int hard_id { get; set; }
-        public override string ToString()
-        {
-            return name;
         }
     }
 }

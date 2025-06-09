@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Diploma.Windows"
         mc:Ignorable="d"
-        Title="AuthWindow" Height="450" Width="300" ResizeMode="CanMinimize" MouseDown="Window_MouseDown" Closing="Window_Closing"
+        Title="Авторизация" Height="450" Width="300" ResizeMode="CanMinimize" MouseDown="Window_MouseDown" Closing="Window_Closing"
         WindowStartupLocation="CenterScreen">
     <Grid Background="{DynamicResource BorautoBlue}">
         <Border BorderBrush="#ffffff" BorderThickness="2"/>

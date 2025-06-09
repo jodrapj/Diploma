@@ -35,6 +35,7 @@ namespace Diploma.Pages.AddEdit
             {
                 this.DataContext = new writeoff();
             }
+            hardwareBox.ItemsSource = Connect.context.hardware.ToList();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)

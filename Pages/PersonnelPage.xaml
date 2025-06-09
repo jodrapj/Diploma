@@ -32,7 +32,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД" Binding="{Binding personnel_id}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Фамилия" Binding="{Binding personnel_lastname}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Имя" Binding="{Binding pesonnel_name}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Имя" Binding="{Binding personnel_name}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Отчество" Binding="{Binding personnel_patronymic}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Должность" Binding="{Binding personnel_title}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Номер телефона" Binding="{Binding personnel_phone}" IsReadOnly="True"/>

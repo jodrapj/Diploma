@@ -49,15 +49,14 @@ namespace Diploma.Pages
         {
             foreach (department item in DepartList.SelectedItems)
             {
-                if (Connect.context.movement.Find(item.department_id) != null || Connect.context.repair.Find(item.department_id) != null
-                    || Connect.context.supplier.Find(item.department_id) != null)
+                if (Connect.context.personnel.Find(item.department_id) != null)
                 {
                     MessageBox.Show($"Один или несколько выбранных объектов содержатся в другой таблице");
                     return;
                 }
             }
             if (MessageBox.Show($"Вы уверены что хотите удалить {DepartList.SelectedItems.Count} {Ext.NumDeclension(DepartList.SelectedItems.Count, "запись", "записей", "записи")}?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
-                Connect.context.department.RemoveRange(DepartList.SelectedItems as List<department>);
+                Connect.context.department.Remove(DepartList.SelectedItem as department);
             Connect.context.SaveChanges();
             Update();
         }

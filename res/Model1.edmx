@@ -25,21 +25,21 @@
           <Key>
             <PropertyRef Name="department_id" />
           </Key>
-          <Property Name="department_id" Type="int" Nullable="false" />
+          <Property Name="department_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="department_name" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="hardtype">
           <Key>
             <PropertyRef Name="hardtype_id" />
           </Key>
-          <Property Name="hardtype_id" Type="int" Nullable="false" />
+          <Property Name="hardtype_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="hardtype_name" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="hardware">
           <Key>
             <PropertyRef Name="hard_id" />
           </Key>
-          <Property Name="hard_id" Type="int" Nullable="false" />
+          <Property Name="hard_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="hard_name" Type="nvarchar(max)" />
           <Property Name="hard_model" Type="nvarchar(max)" />
           <Property Name="hard_manufacturer" Type="nvarchar(max)" />
@@ -50,7 +50,7 @@
           <Key>
             <PropertyRef Name="movement_id" />
           </Key>
-          <Property Name="movement_id" Type="int" Nullable="false" />
+          <Property Name="movement_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="movement_date" Type="date" />
           <Property Name="movement_from" Type="nvarchar(max)" />
           <Property Name="movement_to" Type="nvarchar(max)" />
@@ -61,7 +61,7 @@
           <Key>
             <PropertyRef Name="personnel_id" />
           </Key>
-          <Property Name="personnel_id" Type="int" Nullable="false" />
+          <Property Name="personnel_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="personnel_lastname" Type="nvarchar(max)" />
           <Property Name="personnel_name" Type="nvarchar(max)" />
           <Property Name="personnel_patronymic" Type="nvarchar(max)" />
@@ -74,7 +74,7 @@
           <Key>
             <PropertyRef Name="repair_id" />
           </Key>
-          <Property Name="repair_id" Type="int" Nullable="false" />
+          <Property Name="repair_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="repair_begindate" Type="date" />
           <Property Name="repair_enddate" Type="date" />
           <Property Name="repair_place" Type="nvarchar(max)" />
@@ -84,7 +84,7 @@
           <Key>
             <PropertyRef Name="supplier_id" />
           </Key>
-          <Property Name="supplier_id" Type="int" Nullable="false" />
+          <Property Name="supplier_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="supplier_orgname" Type="nvarchar(max)" />
           <Property Name="supplier_name" Type="nvarchar(max)" />
           <Property Name="supplier_phone" Type="nvarchar" MaxLength="12" />
@@ -94,7 +94,7 @@
           <Key>
             <PropertyRef Name="supply_id" />
           </Key>
-          <Property Name="supply_id" Type="int" Nullable="false" />
+          <Property Name="supply_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="supply_date" Type="date" />
           <Property Name="supplier_id" Type="int" />
           <Property Name="hard_id" Type="int" />
@@ -103,7 +103,7 @@
           <Key>
             <PropertyRef Name="writeoff_id" />
           </Key>
-          <Property Name="writeoff_id" Type="int" Nullable="false" />
+          <Property Name="writeoff_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="writeoff_date" Type="date" />
           <Property Name="writeoff_reason" Type="nvarchar(max)" />
           <Property Name="hard_id" Type="int" />

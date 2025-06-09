@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
 using Diploma.Classes;
 using Diploma.res;
@@ -22,6 +23,7 @@ namespace Diploma.Pages.AddEdit
             {
                 this.DataContext = new hardware();
             }
+            hardtypeBox.ItemsSource = Connect.context.hardtype.ToList();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)

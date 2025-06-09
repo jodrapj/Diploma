@@ -21,7 +21,16 @@
             <StackPanel>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding writeoff_date}" Width="150" Margin="5" Height="30"/>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding writeoff_reason}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding hard_id}" Width="150" Margin="5" Height="30"/>
+                <ComboBox Style="{StaticResource BasicComboBox}" Height="30" Name="hardwareBox" ItemsSource="{Binding hardware}" Text="{Binding hard_name}" DisplayMemberPath="hard_name" SelectedValue="{Binding hard_id}" SelectedValuePath="hard_id">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem">
+                            <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                            <Setter Property="Foreground" Value="#FFFFFF"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="BorderBrush" Value="#FFFFFF"/>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
             </StackPanel>
         </StackPanel>
     </Grid>

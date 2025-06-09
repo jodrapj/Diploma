@@ -35,6 +35,8 @@ namespace Diploma.Pages.AddEdit
             {
                 this.DataContext = new movement();
             }
+            hardwareBox.ItemsSource = Connect.context.hardware.ToList();
+            personnelBox.ItemsSource = Connect.context.personnel.ToList();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)

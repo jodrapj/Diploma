@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Diploma.Windows"
         mc:Ignorable="d"
-        Title="MainAccessWindow" Height="655" Width="1200" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+        Title="Главное меню" Height="655" Width="1200" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid>
         <DockPanel LastChildFill="True" Background="{DynamicResource BorautoBlue}">
             <DockPanel Width="150" Background="{DynamicResource BorautoBlue}">

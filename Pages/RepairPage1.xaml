@@ -31,10 +31,10 @@
             </DataGrid.RowStyle>
             <DataGrid.Columns>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД" Binding="{Binding repair_id}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД Оборудования" Binding="{Binding repair_begindate}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Специалист" Binding="{Binding repair_enddate}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Состояние" Binding="{Binding repair_place}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Дата ремонта" Binding="{Binding hard_id}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Дата начала" Binding="{Binding repair_begindate}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Дата окончания" Binding="{Binding repair_enddate}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Место ремонта" Binding="{Binding repair_place}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Оборудование" Binding="{Binding hard_id}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

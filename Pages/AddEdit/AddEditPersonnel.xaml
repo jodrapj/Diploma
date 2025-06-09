@@ -24,12 +24,21 @@
             </StackPanel>
             <StackPanel>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding personnel_lastname}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding pesonnel_name}" Width="150" Margin="5" Height="30"/>
+                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding personnel_name}" Width="150" Margin="5" Height="30"/>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding personnel_patronymic}" Width="150" Margin="5" Height="30"/>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding personnel_title}" Width="150" Margin="5" Height="30"/>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding personnel_phone}" Width="150" Margin="5" Height="30"/>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding personnel_address}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding department_id}" Width="150" Margin="5" Height="30"/>
+                <ComboBox Style="{StaticResource BasicComboBox}" Height="30" Name="departmentBox" ItemsSource="{Binding department}" Text="{Binding department_name}" DisplayMemberPath="department_name" SelectedValue="{Binding department_id}" SelectedValuePath="department_id">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem">
+                            <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
+                            <Setter Property="Foreground" Value="#FFFFFF"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="BorderBrush" Value="#FFFFFF"/>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
             </StackPanel>
         </StackPanel>
     </Grid>

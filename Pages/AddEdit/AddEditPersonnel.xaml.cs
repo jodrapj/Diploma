@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
 using Diploma.Classes;
 using Diploma.res;
@@ -19,6 +20,7 @@ namespace Diploma.Pages.AddEdit
                 this.DataContext = context;
                 this.context = context;
             }
+            departmentBox.ItemsSource = Connect.context.department.ToList();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
