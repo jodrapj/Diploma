@@ -1,36 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jodrapj\\Desktop\\Diploma\\",
+  "WorkspaceRootPath": "C:\\Users\\maxwashere\\Desktop\\Diploma\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\jodrapj\\Desktop\\Diploma\\windows\\mainaccesswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|c:\\users\\maxwashere\\desktop\\diploma\\pages\\addedit\\addeditmovement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:pages\\addedit\\addeditmovement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|c:\\users\\maxwashere\\desktop\\diploma\\pages\\addedit\\addeditmovement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:pages\\addedit\\addeditmovement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|c:\\users\\maxwashere\\desktop\\diploma\\pages\\addedit\\addeditsuppliers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:pages\\addedit\\addeditsuppliers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|c:\\users\\maxwashere\\desktop\\diploma\\windows\\mainaccesswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:windows\\mainaccesswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Diploma||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\jodrapj\\Desktop\\Diploma\\windows\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\maxwashere\\Desktop\\Diploma\\windows\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:windows\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\jodrapj\\Desktop\\Diploma\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\maxwashere\\Desktop\\Diploma\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\jodrapj\\Desktop\\Diploma\\pages\\addedit\\addeditdepartment.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\maxwashere\\Desktop\\Diploma\\pages\\addedit\\addeditdepartment.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:pages\\addedit\\addeditdepartment.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\jodrapj\\Desktop\\Diploma\\pages\\departmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\maxwashere\\Desktop\\Diploma\\pages\\departmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:pages\\departmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\jodrapj\\Desktop\\Diploma\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|C:\\Users\\maxwashere\\Desktop\\Diploma\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|c:\\users\\jodrapj\\desktop\\diploma\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,71 +49,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Diploma",
-              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Diploma.csproj",
-              "RelativeDocumentMoniker": "Diploma.csproj",
-              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Diploma.csproj",
-              "RelativeToolTip": "Diploma.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-09T16:56:13.851Z",
+              "Title": "AddEditMovement.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditMovement.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditMovement.xaml.cs",
+              "ToolTip": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditMovement.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditMovement.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T09:07:26.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddEditMovement.xaml",
+              "DocumentMoniker": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditMovement.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditMovement.xaml",
+              "ToolTip": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditMovement.xaml",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditMovement.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-11T09:07:27.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AuthWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Windows\\AuthWindow.xaml",
-              "RelativeDocumentMoniker": "Windows\\AuthWindow.xaml",
-              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Windows\\AuthWindow.xaml",
-              "RelativeToolTip": "Windows\\AuthWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-09T16:18:55.601Z"
+              "Title": "AddEditSuppliers.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditSuppliers.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditSuppliers.xaml.cs",
+              "ToolTip": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditSuppliers.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditSuppliers.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvyMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T09:05:09.895Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Pages\\MainPage.xaml",
               "RelativeDocumentMoniker": "Pages\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Pages\\MainPage.xaml",
               "RelativeToolTip": "Pages\\MainPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-08T12:15:29.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "DepartmentPage.xaml",
-              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\DepartmentPage.xaml",
+              "DocumentMoniker": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Pages\\DepartmentPage.xaml",
               "RelativeDocumentMoniker": "Pages\\DepartmentPage.xaml",
-              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\DepartmentPage.xaml",
+              "ToolTip": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Pages\\DepartmentPage.xaml",
               "RelativeToolTip": "Pages\\DepartmentPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-08T12:11:30.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "AddEditDepartment.xaml",
-              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditDepartment.xaml",
+              "DocumentMoniker": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditDepartment.xaml",
               "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditDepartment.xaml",
-              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditDepartment.xaml",
+              "ToolTip": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditDepartment.xaml",
               "RelativeToolTip": "Pages\\AddEdit\\AddEditDepartment.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-08T12:11:28.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\maxwashere\\Desktop\\Diploma\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\App.xaml",
+              "ToolTip": "C:\\Users\\maxwashere\\Desktop\\Diploma\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-08T12:03:12.94Z",
@@ -112,15 +136,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainAccessWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Windows\\MainAccessWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Windows\\MainAccessWindow.xaml",
               "RelativeDocumentMoniker": "Windows\\MainAccessWindow.xaml",
-              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Windows\\MainAccessWindow.xaml",
+              "ToolTip": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Windows\\MainAccessWindow.xaml",
               "RelativeToolTip": "Windows\\MainAccessWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-08T12:03:04.762Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Windows\\AuthWindow.xaml",
+              "RelativeDocumentMoniker": "Windows\\AuthWindow.xaml",
+              "ToolTip": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Windows\\AuthWindow.xaml",
+              "RelativeToolTip": "Windows\\AuthWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-09T16:18:55.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Diploma",
+              "DocumentMoniker": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Diploma.csproj",
+              "RelativeDocumentMoniker": "Diploma.csproj",
+              "ToolTip": "C:\\Users\\maxwashere\\Desktop\\Diploma\\Diploma.csproj",
+              "RelativeToolTip": "Diploma.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-09T16:56:13.851Z"
             }
           ]
         }

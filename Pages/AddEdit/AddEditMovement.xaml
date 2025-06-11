@@ -31,7 +31,7 @@
                 <Button Style="{StaticResource BasicButton}" Content="Отмена" Width="150" Height="30" Margin="5" Click="Cancel_Click"/>
             </StackPanel>
             <StackPanel>
-                <DatePicker Text="{Binding movement_date}" FontSize="16" Width="150" Margin="5" Height="30">
+                <DatePicker x:Name="DPicker" Text="{Binding movement_date}" FontSize="16" Width="150" Margin="5" Height="30">
                     <DatePicker.Resources>
                         <Style TargetType="{x:Type DatePickerTextBox}">
                             <Setter Property="Control.Template">
@@ -47,7 +47,7 @@
                 </DatePicker>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding movement_from}" Width="150" Margin="5" Height="30"/>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding movement_to}" Width="150" Margin="5" Height="30"/>
-                <ComboBox Style="{StaticResource BasicComboBox}" Height="30" Name="personnelBox" ItemsSource="{Binding personnel}" Text="{Binding personnel_lastname}" DisplayMemberPath="personnel_lastname" SelectedValue="{Binding personnel_id}" SelectedValuePath="personnel_id">
+                <ComboBox Style="{StaticResource BasicComboBox}" Height="30" Name="personnelBox" ItemsSource="{Binding personnel}" DisplayMemberPath="personnel_lastname" SelectedValue="{Binding personnel_id}" SelectedValuePath="personnel_id">
                     <ComboBox.ItemContainerStyle>
                         <Style TargetType="ComboBoxItem">
                             <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
