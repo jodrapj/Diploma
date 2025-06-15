@@ -45,7 +45,7 @@ namespace Diploma.Pages
         public void Remove()
         {
             if (MessageBox.Show($"Вы уверены что хотите удалить {MoveList.SelectedItems.Count} {Ext.NumDeclension(MoveList.SelectedItems.Count, "запись", "записей", "записи")}?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
-                Connect.context.movement.RemoveRange(MoveList.SelectedItems as List<movement>);
+                Connect.context.movement.Remove(MoveList.SelectedItem as movement);
             Connect.context.SaveChanges();
             Update();
         }

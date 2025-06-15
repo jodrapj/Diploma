@@ -265,6 +265,7 @@
       <End Role="access" EntitySet="access" />
       <End Role="credentials" EntitySet="credentials" />
     </AssociationSet>
+    <EntitySet Name="sysdiagrams" EntityType="Model.sysdiagrams" />
   </EntityContainer>
   <EntityType Name="access">
     <Key>
@@ -296,4 +297,14 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
 </Schema>

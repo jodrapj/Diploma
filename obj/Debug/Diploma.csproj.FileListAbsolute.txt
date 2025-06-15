@@ -68,4 +68,5 @@ C:\Users\jodrapj\Desktop\Diploma\obj\Debug\Pages\DepartmentPage.baml
 C:\Users\jodrapj\Desktop\Diploma\obj\Debug\Pages\HardtypePage.baml
 C:\Users\jodrapj\Desktop\Diploma\obj\Debug\Pages\SupplyPage.baml
 C:\Users\jodrapj\Desktop\Diploma\obj\Debug\Pages\WriteoffPage.baml
+C:\Users\jodrapj\Desktop\Diploma\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\jodrapj\Desktop\Diploma\obj\Debug\Diploma.exe.config

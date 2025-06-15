@@ -94,6 +94,16 @@
     <Property Name="supplier_id" Type="int" />
     <Property Name="hard_id" Type="int" />
   </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
   <EntityType Name="writeoff">
     <Key>
       <PropertyRef Name="writeoff_id" />
@@ -175,7 +185,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_repair_hardware">
+  <Association Name="FK_repair_hardware1">
     <End Role="hardware" Type="Self.hardware" Multiplicity="0..1" />
     <End Role="repair" Type="Self.repair" Multiplicity="*" />
     <ReferentialConstraint>
@@ -234,6 +244,7 @@
     <EntitySet Name="repair" EntityType="Self.repair" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="supplier" EntityType="Self.supplier" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="supply" EntityType="Self.supply" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="writeoff" EntityType="Self.writeoff" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_credentials_access" Association="Self.FK_credentials_access">
       <End Role="access" EntitySet="access" />
@@ -259,7 +270,7 @@
       <End Role="department" EntitySet="department" />
       <End Role="personnel" EntitySet="personnel" />
     </AssociationSet>
-    <AssociationSet Name="FK_repair_hardware" Association="Self.FK_repair_hardware">
+    <AssociationSet Name="FK_repair_hardware1" Association="Self.FK_repair_hardware1">
       <End Role="hardware" EntitySet="hardware" />
       <End Role="repair" EntitySet="repair" />
     </AssociationSet>

@@ -24,6 +24,7 @@ namespace Diploma.Pages.AddEdit
                 this.DataContext = new hardware();
             }
             hardtypeBox.ItemsSource = Connect.context.hardtype.ToList();
+            personnelBox.ItemsSource = Connect.context.personnel.ToList();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)

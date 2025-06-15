@@ -83,6 +83,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\CustomElements\CustomDatePicker.cs" />
     <Compile Include="Pages\AddEdit\AddEditDepartment.xaml.cs">
       <DependentUpon>AddEditDepartment.xaml</DependentUpon>
     </Compile>
@@ -153,6 +154,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="res\supply.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="res\sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="res\writeoff.cs">

@@ -36,5 +36,6 @@ namespace Diploma.res
         public virtual DbSet<writeoff> writeoff { get; set; }
         public virtual DbSet<access> access { get; set; }
         public virtual DbSet<credentials> credentials { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

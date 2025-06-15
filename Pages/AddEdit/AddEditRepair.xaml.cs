@@ -1,8 +1,12 @@
-﻿using System;
+﻿using Diploma.Classes;
+using Diploma.res;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,8 +17,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Diploma.Classes;
-using Diploma.res;
 
 namespace Diploma.Pages.AddEdit
 {
@@ -64,6 +66,19 @@ namespace Diploma.Pages.AddEdit
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+        }
+
+        private void DPicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DPickerTextBox.Text = DPicker.SelectedDate.Value.ToString("G", new CultureInfo("en-US"));
+            DPickerTextBox.Focus();
+            WhereBox.Focus();
+        }
+        private void DPicker_SelectedDateChanged1(object sender, SelectionChangedEventArgs e)
+        {
+            DPickerTextBox1.Text = DPicker1.SelectedDate.Value.ToString("G", new CultureInfo("en-US"));
+            DPickerTextBox1.Focus();
+            WhereBox.Focus();
         }
     }
 }

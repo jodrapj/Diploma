@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,6 +61,16 @@ namespace Diploma.Pages.AddEdit
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             Data.MFrame.GoBack();
+        }
+
+        private void DPicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (DPicker.SelectedDate.Value.ToString("G", new CultureInfo("en-US")) == null)
+                DPickerTextBox.Text = DateTime.Now.ToString("G", new CultureInfo("en-US"));
+            else
+                DPickerTextBox.Text = DPicker.SelectedDate.Value.ToString("G", new CultureInfo("en-US"));
+            DPickerTextBox.Focus();
+            FromBox.Focus();
         }
     }
 }
