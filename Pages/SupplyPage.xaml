@@ -32,8 +32,8 @@
             <DataGrid.Columns>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД" Binding="{Binding supply_id}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Дата" Binding="{Binding supply_date}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Поставщик" Binding="{Binding supplier_id}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Пришедшее оборудование" Binding="{Binding hard_id}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Поставщик" Binding="{Binding supplier.supplier_name}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Пришедшее оборудование" Binding="{Binding hardware.hard_name}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

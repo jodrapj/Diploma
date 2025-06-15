@@ -34,7 +34,7 @@
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Дата начала" Binding="{Binding repair_begindate}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Дата окончания" Binding="{Binding repair_enddate}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Место ремонта" Binding="{Binding repair_place}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Оборудование" Binding="{Binding hard_id}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Оборудование" Binding="{Binding hardware.hard_name}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

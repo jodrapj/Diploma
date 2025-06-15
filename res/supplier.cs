@@ -19,7 +19,24 @@ namespace Diploma.res
         {
             this.supply = new HashSet<supply>();
         }
-    
+
+        public static List<String> TableNames
+        {
+            get
+            {
+                List<String> tableNames = new List<String>()
+                {
+                    "ИД",
+                    "Наименование организации",
+                    "ФИО поставщика",
+                    "Контактный телефон",
+                    "Адрес организации"
+                };
+
+                return tableNames;
+            }
+        }
+
         public int supplier_id { get; set; }
         public string supplier_orgname { get; set; }
         public string supplier_name { get; set; }

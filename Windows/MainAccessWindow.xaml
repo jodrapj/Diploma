@@ -5,35 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Diploma.Windows"
         mc:Ignorable="d"
-        Title="Главное меню" Height="655" Width="1200" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+        Title="Главное меню" Height="700" Width="1200" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid>
-        <DockPanel LastChildFill="True" Background="{DynamicResource BorautoBlue}">
-            <DockPanel Width="150" Background="{DynamicResource BorautoBlue}">
-                <StackPanel x:Name="Sidepanel1" Orientation="Vertical" HorizontalAlignment="Stretch" DockPanel.Dock="Top">
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Оборудование" Click="Hardware_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Типы оборудования" Click="Hardtype_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Персонал" Click="Personnel_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Департаменты" Click="Department_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Поставщики" Click="Suppliers_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5,10,5,5" Content="Движения" Click="Movement_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Списания" Click="Writeoff_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Поставки" Click="Supply_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Ремонт" Click="Repair_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5,10,5,5" Content="Пользователи" Click="Creds_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Уровни доступа" Click="Access_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5,10,5,5" Content="Добавить" Click="Add_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Удалить" Click="Remove_Click"/>
-                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Изменить" Click="Edit_Click"/>
-                </StackPanel>
-                <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" VerticalAlignment="Bottom" Content="Выйти" Click="Logout_Click"/>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top" Height="19" VerticalAlignment="Top">
+                <MenuItem Header="Сервис">
+                    <MenuItem Header="Поиск" Click="SearchWindow_Click"/>
+                    <MenuItem Header="Резервное копирование"/>
+                    <MenuItem Header="Выйти" Click="Logout_Click"/>
+                </MenuItem>
+                <MenuItem Header="Редактирование">
+                    <MenuItem Header="Добавить" Click="Add_Click"/>
+                    <MenuItem Header="Удалить" Click="Remove_Click"/>
+                    <MenuItem Header="Изменить" Click="Edit_Click"/>
+                </MenuItem>
+                <MenuItem Header="Отчеты">
+                    <MenuItem Header="Текущее оборудование"/>
+                    <MenuItem Header="Списания"/>
+                    <MenuItem Header="Поставки"/>
+                    <MenuItem Header="Ремонт"/>
+                </MenuItem>
+            </Menu>
+            <DockPanel LastChildFill="True" Background="{DynamicResource BorautoBlue}">
+                <DockPanel Width="150" Background="{DynamicResource BorautoBlue}">
+                    <StackPanel x:Name="Sidepanel1" Orientation="Vertical" HorizontalAlignment="Stretch" DockPanel.Dock="Top">
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Оборудование" Click="Hardware_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Типы оборудования" Click="Hardtype_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Персонал" Click="Personnel_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Департаменты" Click="Department_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Поставщики" Click="Suppliers_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5,10,5,5" Content="Движения" Click="Movement_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Списания" Click="Writeoff_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Поставки" Click="Supply_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Ремонт" Click="Repair_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5,10,5,5" Content="Пользователи" Click="Creds_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Уровни доступа" Click="Access_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5,10,5,5" Content="Добавить" Click="Add_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Удалить" Click="Remove_Click"/>
+                        <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" Content="Изменить" Click="Edit_Click"/>
+                    </StackPanel>
+                    <Button Style="{StaticResource BasicButton}" Height="30" Margin="5" VerticalAlignment="Bottom" Content="Выйти" Click="Logout_Click"/>
+                </DockPanel>
+                <Border VerticalAlignment="Bottom" HorizontalAlignment="Right" DockPanel.Dock="Bottom">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource BasicText}" Margin="5" x:Name="VersionBox" Text="version placeholder"/>
+                        <TextBlock Style="{StaticResource BasicText}" Margin="5" x:Name="LoginShowBox" Text="login placeholder"/>
+                    </StackPanel>
+                </Border>
+                <Frame x:Name="MFrame" NavigationUIVisibility="Hidden" Background="{DynamicResource BorautoBlue}"/>
             </DockPanel>
-            <Border VerticalAlignment="Bottom" HorizontalAlignment="Right" DockPanel.Dock="Bottom">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Style="{StaticResource BasicText}" Margin="5" x:Name="VersionBox" Text="version placeholder"/>
-                    <TextBlock Style="{StaticResource BasicText}" Margin="5" x:Name="LoginShowBox" Text="login placeholder"/>
-                </StackPanel>
-            </Border>
-            <Frame x:Name="MFrame" NavigationUIVisibility="Hidden" Background="{DynamicResource BorautoBlue}"/>
         </DockPanel>
     </Grid>
 </Window>

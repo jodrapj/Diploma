@@ -14,6 +14,23 @@ namespace Diploma.res
     
     public partial class movement
     {
+        public static List<String> TableNames
+        {
+            get
+            {
+                List<String> tableNames = new List<String>()
+                {
+                    "ИД",
+                    "Дата движения",
+                    "Движение ИЗ",
+                    "Движение В",
+                    "Отв. лицо",
+                    "Оборудование"
+                };
+
+                return tableNames;
+            }
+        }
         public int movement_id { get; set; }
         public Nullable<System.DateTime> movement_date { get; set; }
         public string movement_from { get; set; }

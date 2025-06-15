@@ -36,6 +36,11 @@ namespace Diploma.Pages
 
         public void Edit()
         {
+            if (SupplyList.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите элемент для редактирования", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             Data.MFrame.Navigate(new AddEdit.AddEditSupply(SupplyList.SelectedItem as supply));
             Connect.context.SaveChanges();
         }
@@ -47,6 +52,11 @@ namespace Diploma.Pages
 
         public void Remove()
         {
+            if (SupplyList.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите элемент для удаления", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             foreach (supply item in SupplyList.SelectedItems)
             {
                 if (Connect.context.movement.Find(item.hard_id) != null || Connect.context.repair.Find(item.hard_id) != null
@@ -65,6 +75,11 @@ namespace Diploma.Pages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             Update();
+        }
+
+        public DataGrid GetDataGrid()
+        {
+            return SupplyList;
         }
     }
 }

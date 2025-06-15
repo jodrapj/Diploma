@@ -3,7 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Diploma.Pages.AddEdit"
+      xmlns:local="clr-namespace:Diploma.Classes.CustomElements"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AddEditSupply">
@@ -19,8 +19,11 @@
                 <Button Style="{StaticResource BasicButton}" Content="Отмена" Width="150" Height="30" Margin="5" Click="Cancel_Click"/>
             </StackPanel>
             <StackPanel>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding supply_date}" Width="150" Margin="5" Height="30"/>
-                <ComboBox Style="{StaticResource BasicComboBox}" Height="30" Name="supplierBox" ItemsSource="{Binding supplier}" Text="{Binding supplier_orgname}" DisplayMemberPath="supplier_orgname" SelectedValue="{Binding supplier_id}" SelectedValuePath="supplier_id">
+                <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                    <TextBox Text="{Binding supply_date}" x:Name="DPickerTextBox" Style="{StaticResource BasicTextbox}" Width="150" Margin="5" Height="30"/>
+                    <local:CustomDatePicker BorderBrush="Transparent" SelectedDateChanged="DPicker_SelectedDateChanged" x:Name="DPicker" Height="25" Width="30"/>
+                </StackPanel>
+                <ComboBox Width="150" Style="{StaticResource BasicComboBox}" Height="30" Name="supplierBox" ItemsSource="{Binding supplier}" DisplayMemberPath="supplier_orgname" SelectedValue="{Binding supplier_id}" SelectedValuePath="supplier_id">
                     <ComboBox.ItemContainerStyle>
                         <Style TargetType="ComboBoxItem">
                             <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>
@@ -30,7 +33,7 @@
                         </Style>
                     </ComboBox.ItemContainerStyle>
                 </ComboBox>
-                <ComboBox Style="{StaticResource BasicComboBox}" Height="30" Name="hardwareBox" ItemsSource="{Binding hardware}" Text="{Binding hard_name}" DisplayMemberPath="hard_name" SelectedValue="{Binding hard_id}" SelectedValuePath="hard_id">
+                <ComboBox Width="150" Style="{StaticResource BasicComboBox}" Height="30" Name="hardwareBox" ItemsSource="{Binding hardware}" DisplayMemberPath="hard_name" SelectedValue="{Binding hard_id}" SelectedValuePath="hard_id">
                     <ComboBox.ItemContainerStyle>
                         <Style TargetType="ComboBoxItem">
                             <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>

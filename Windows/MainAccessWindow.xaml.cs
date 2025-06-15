@@ -18,14 +18,11 @@ namespace Diploma.Windows
     {
         ProgressBarWindow progressBarWindow;
         int? accessLevel;
-        int currentPage = 0;
-
-        SolidColorBrush passiveButton = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#5e6cab"));
-        SolidColorBrush activeButton = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#4153a3"));
+        int currentPage = 11;
 
         Button buffer = new Button();
 
-        object[] pages = new object[11];
+        object[] pages = new object[12];
 
         public MainAccessWindow(int accessLevel, string login)
         {
@@ -46,6 +43,7 @@ namespace Diploma.Windows
             pages[8] = new RepairPage1();
             pages[9] = new RepairPage1();
             pages[10] = new RepairPage1();
+            pages[11] = new MainPage();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -70,82 +68,75 @@ namespace Diploma.Windows
             progressBarWindow.Close();
         }
 
-        private void Hardware_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonHighlight(sender, 0);
-        }
+        private void Hardware_Click(object sender, RoutedEventArgs e) => ButtonHighlight(sender, 0);
 
-        private void Hardtype_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonHighlight(sender, 1);
-        }
+        private void Hardtype_Click(object sender, RoutedEventArgs e) => ButtonHighlight(sender, 1);
 
-        private void Personnel_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonHighlight(sender, 2);
-        }
+        private void Personnel_Click(object sender, RoutedEventArgs e) => ButtonHighlight(sender, 2);
 
-        private void Department_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonHighlight(sender, 3);
-        }
+        private void Department_Click(object sender, RoutedEventArgs e) => ButtonHighlight(sender, 3);
 
-        private void Suppliers_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonHighlight(sender, 4);
-        }
+        private void Suppliers_Click(object sender, RoutedEventArgs e) => ButtonHighlight(sender, 4);
 
-        private void Movement_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonHighlight(sender, 5);
-        }
+        private void Movement_Click(object sender, RoutedEventArgs e) => ButtonHighlight(sender, 5);
 
-        private void Writeoff_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonHighlight(sender, 6);
-        }
+        private void Writeoff_Click(object sender, RoutedEventArgs e) => ButtonHighlight(sender, 6);
 
-        private void Supply_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonHighlight(sender, 7);
-        }
+        private void Supply_Click(object sender, RoutedEventArgs e) => ButtonHighlight(sender, 7);
 
-        private void Repair_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonHighlight(sender, 8);
-        }
+        private void Repair_Click(object sender, RoutedEventArgs e) => ButtonHighlight(sender, 8);
 
-        private void Creds_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonHighlight(sender, 9);
-        }
+        private void Creds_Click(object sender, RoutedEventArgs e) => ButtonHighlight(sender, 9);
 
-        private void Access_Click(object sender, RoutedEventArgs e)
-        {
-            ButtonHighlight(sender, 10);
-        }
+        private void Access_Click(object sender, RoutedEventArgs e) => ButtonHighlight(sender, 10);
 
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
+            if (currentPage == 11)
+            {
+                MessageBox.Show("Выберите элемент для редактирования", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             (pages[currentPage] as AddEditRemove).Edit();
         }
 
         private void Remove_Click(object sender, RoutedEventArgs e)
         {
+            if (currentPage == 11)
+            {
+                MessageBox.Show("Выберите элемент для редактирования", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             (pages[currentPage] as AddEditRemove).Remove();
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            (pages[currentPage]as AddEditRemove).Add();
+            if (currentPage == 11)
+            {
+                MessageBox.Show("Выберите таблицу для добавления новых элементов", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            (pages[currentPage] as AddEditRemove).Add();
         }
 
         private void ButtonHighlight(object sender, int pagenum)
         {
             Data.MFrame.Navigate(pages[currentPage = pagenum]);
-            buffer.Background = passiveButton;
-            (sender as Button).Background = activeButton;
+            buffer.Background = Ext.passiveButton;
+            (sender as Button).Background = Ext.activeButton;
             buffer = sender as Button;
+        }
+
+        private void SearchWindow_Click(object sender, RoutedEventArgs e)
+        {
+            if (currentPage == 11)
+            {
+                MessageBox.Show("Выберите таблицу для поиска", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            new SearchWindow(Ext.TypeList[currentPage], (pages[currentPage] as AddEditRemove).GetDataGrid()).Show();
         }
     }
 }

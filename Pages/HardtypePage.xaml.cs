@@ -36,6 +36,11 @@ namespace Diploma.Pages
 
         public void Edit()
         {
+            if (TypeList.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите элемент для редактирования", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             Data.MFrame.Navigate(new AddEdit.AddEditHardtype(TypeList.SelectedItem as hardtype));
             Connect.context.SaveChanges();
         }
@@ -47,6 +52,11 @@ namespace Diploma.Pages
 
         public void Remove()
         {
+            if (TypeList.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите элемент для удаления", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             foreach (hardtype item in TypeList.SelectedItems)
             {
                 if (Connect.context.movement.Find(item.hardtype_id) != null || Connect.context.repair.Find(item.hardtype_id) != null
@@ -65,6 +75,11 @@ namespace Diploma.Pages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             Update();
+        }
+
+        public DataGrid GetDataGrid()
+        {
+            return TypeList;
         }
     }
 }

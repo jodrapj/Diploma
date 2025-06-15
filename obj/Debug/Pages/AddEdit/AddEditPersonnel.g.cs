@@ -9,7 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using Diploma.Classes.CustomElements;
 using Diploma.Pages.AddEdit;
 using System;
 using System.Diagnostics;

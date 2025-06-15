@@ -33,7 +33,7 @@
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД" Binding="{Binding writeoff_id}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Дата" Binding="{Binding writeoff_date}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Причина списания" Binding="{Binding writeoff_reason}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="ИД оборудования" Binding="{Binding hard_id}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Списанное оборудование" Binding="{Binding hardware.hard_name}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

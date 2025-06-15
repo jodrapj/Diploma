@@ -24,7 +24,7 @@ namespace Diploma.res
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+
         public virtual DbSet<department> department { get; set; }
         public virtual DbSet<hardtype> hardtype { get; set; }
         public virtual DbSet<hardware> hardware { get; set; }

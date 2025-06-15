@@ -14,6 +14,21 @@ namespace Diploma.res
     
     public partial class writeoff
     {
+        public static List<String> TableNames
+        {
+            get
+            {
+                List<String> tableNames = new List<String>()
+                {
+                    "ИД",
+                    "Дата списания",
+                    "Причина списания",
+                    "Оборудование"
+                };
+
+                return tableNames;
+            }
+        }
         public int writeoff_id { get; set; }
         public Nullable<System.DateTime> writeoff_date { get; set; }
         public string writeoff_reason { get; set; }

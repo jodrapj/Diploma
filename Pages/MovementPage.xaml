@@ -34,8 +34,8 @@
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Дата" Binding="{Binding movement_date}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Движение ИЗ" Binding="{Binding movement_from}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Движение В" Binding="{Binding movement_to}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Отв. лицо" Binding="{Binding personnel_id}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Оборудование" Binding="{Binding hard_id}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Отв. лицо" Binding="{Binding personnel.fullname}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Оборудование" Binding="{Binding hardware.hard_name}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

@@ -35,7 +35,7 @@
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Производитель" Binding="{Binding hard_manufacturer}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Модель" Binding="{Binding hard_model}" IsReadOnly="True"/>
                 <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Тип" Binding="{Binding hardtype_id}" IsReadOnly="True"/>
-                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Отв. лицо" Binding="{Binding personnel_id}" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource BasicDGCell}" Header="Отв. лицо" Binding="{Binding personnel.fullname}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

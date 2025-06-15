@@ -19,7 +19,21 @@ namespace Diploma.res
         {
             this.hardware = new HashSet<hardware>();
         }
-    
+
+        public static List<String> TableNames
+        {
+            get
+            {
+                List<String> tableNames = new List<String>()
+                {
+                    "ИД",
+                    "Наименование типа"
+                };
+
+                return tableNames;
+            }
+        }
+
         public int hardtype_id { get; set; }
         public string hardtype_name { get; set; }
     

@@ -20,6 +20,19 @@ namespace Diploma.res
             this.personnel = new HashSet<personnel>();
         }
     
+        public static List<String> TableNames { 
+            get
+            {
+                List<String> tableNames = new List<String>()
+                {
+                    "ИД",
+                    "Наименование департамента"
+                };
+
+                return tableNames;
+            } 
+        }
+
         public int department_id { get; set; }
         public string department_name { get; set; }
     

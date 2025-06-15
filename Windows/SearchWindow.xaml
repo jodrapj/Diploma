@@ -1,0 +1,16 @@
+﻿<Window x:Class="Diploma.Windows.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diploma.Windows"
+        mc:Ignorable="d"
+        Title="Поиск" Height="175" Width="325" Loaded="Window_Loaded" Topmost="True">
+    <Grid Background="{DynamicResource BorautoBlue}">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBox Style="{StaticResource BasicTextbox}" x:Name="SearchBox" Height="30" Width="250" Margin="5"/>
+            <ComboBox Style="{StaticResource BasicComboBox}" x:Name="TableCombobox" Height="30" Width="250" Margin="5"/>
+            <Button Content="Поиск" Height="30" Width="150" Margin="5" Click="Search_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

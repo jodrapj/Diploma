@@ -35,6 +35,11 @@ namespace Diploma.Pages
 
         public void Edit()
         {
+            if (PersonnelList.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите элемент для редактирования", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             Data.MFrame.Navigate(new AddEdit.AddEditPersonnel(PersonnelList.SelectedItem as personnel));
         }
         private void Update()
@@ -44,6 +49,11 @@ namespace Diploma.Pages
 
         public void Remove()
         {
+            if (PersonnelList.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите элемент для удаления", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             if (MessageBox.Show($"Вы уверены что хотите удалить {PersonnelList.SelectedItems.Count} {Ext.NumDeclension(PersonnelList.SelectedItems.Count, "запись", "записей", "записи")}?", "Внимание", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 Connect.context.personnel.RemoveRange(PersonnelList.SelectedItems as List<personnel>);
             Connect.context.SaveChanges();
@@ -53,6 +63,11 @@ namespace Diploma.Pages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             PersonnelList.ItemsSource = Connect.context.personnel.ToList();
+        }
+
+        public DataGrid GetDataGrid()
+        {
+            return PersonnelList;
         }
     }
 }

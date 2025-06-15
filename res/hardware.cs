@@ -22,7 +22,25 @@ namespace Diploma.res
             this.supply = new HashSet<supply>();
             this.writeoff = new HashSet<writeoff>();
         }
-    
+
+        public static List<String> TableNames
+        {
+            get
+            {
+                List<String> tableNames = new List<String>()
+                {
+                    "ИД",
+                    "Наименование",
+                    "Модель",
+                    "Производитель",
+                    "Тип",
+                    "Отв. лицо"
+                };
+
+                return tableNames;
+            }
+        }
+
         public int hard_id { get; set; }
         public string hard_name { get; set; }
         public string hard_model { get; set; }

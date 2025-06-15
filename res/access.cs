@@ -19,7 +19,21 @@ namespace Diploma.res
         {
             this.credentials = new HashSet<credentials>();
         }
-    
+
+        public static List<String> TableNames
+        {
+            get
+            {
+                List<String> tableNames = new List<String>()
+                {
+                    "ИД",
+                    "Уровень доступа"
+                };
+
+                return tableNames;
+            }
+        }
+
         public int access_id { get; set; }
         public string access_level { get; set; }
     

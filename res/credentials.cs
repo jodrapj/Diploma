@@ -14,6 +14,21 @@ namespace Diploma.res
     
     public partial class credentials
     {
+        public static List<String> TableNames
+        {
+            get
+            {
+                List<String> tableNames = new List<String>()
+                {
+                    "ИД",
+                    "Логин",
+                    "Пароль",
+                    "Тип доступа"
+                };
+
+                return tableNames;
+            }
+        }
         public int cred_id { get; set; }
         public string cred_user { get; set; }
         public string cred_pass { get; set; }

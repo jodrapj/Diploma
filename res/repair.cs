@@ -14,6 +14,22 @@ namespace Diploma.res
     
     public partial class repair
     {
+        public static List<String> TableNames
+        {
+            get
+            {
+                List<String> tableNames = new List<String>()
+                {
+                    "ИД",
+                    "Дата начала",
+                    "Дата окончания",
+                    "Место ремонта",
+                    "Оборудование"
+                };
+
+                return tableNames;
+            }
+        }
         public int repair_id { get; set; }
         public Nullable<System.DateTime> repair_begindate { get; set; }
         public Nullable<System.DateTime> repair_enddate { get; set; }

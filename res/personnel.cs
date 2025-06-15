@@ -21,6 +21,33 @@ namespace Diploma.res
             this.movement = new HashSet<movement>();
         }
     
+        public string fullname { 
+            get
+            {
+                return this.personnel_lastname + " " + this.personnel_name + " " + personnel_patronymic;
+            } 
+        }
+
+        public static List<String> TableNames
+        {
+            get
+            {
+                List<String> tableNames = new List<String>()
+                {
+                    "ИД",
+                    "Фамилия",
+                    "Имя",
+                    "Отчество",
+                    "Номер телефона",
+                    "Адрес проживания",
+                    "Отдел",
+                    "Должность"
+                };
+
+                return tableNames;
+            }
+        }
+
         public int personnel_id { get; set; }
         public string personnel_lastname { get; set; }
         public string personnel_name { get; set; }

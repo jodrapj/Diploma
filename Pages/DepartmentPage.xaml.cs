@@ -2,6 +2,7 @@
 using Diploma.res;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +31,11 @@ namespace Diploma.Pages
 
         public void Add()
         {
+            if (DepartList.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите элемент для редактирования", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             Data.MFrame.Navigate(new AddEdit.AddEditDepartment());
             Connect.context.SaveChanges();
         }
@@ -47,6 +53,11 @@ namespace Diploma.Pages
 
         public void Remove()
         {
+            if (DepartList.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите элемент для удаления", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             foreach (department item in DepartList.SelectedItems)
             {
                 if (Connect.context.personnel.Find(item.department_id) != null)
@@ -64,6 +75,11 @@ namespace Diploma.Pages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             Update();
+        }
+
+        public DataGrid GetDataGrid()
+        {
+            return DepartList;
         }
     }
 }

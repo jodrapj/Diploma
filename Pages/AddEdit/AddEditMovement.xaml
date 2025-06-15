@@ -31,7 +31,6 @@
                 <Button Style="{StaticResource BasicButton}" Content="Отмена" Width="150" Height="30" Margin="5" Click="Cancel_Click"/>
             </StackPanel>
             <StackPanel>
-<<<<<<< HEAD
                 <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
                     <TextBox Text="{Binding movement_date}" x:Name="DPickerTextBox" Style="{StaticResource BasicTextbox}" Width="150" Margin="5" Height="30"/>
                     <local:CustomDatePicker BorderBrush="Transparent" SelectedDateChanged="DPicker_SelectedDateChanged" x:Name="DPicker" Height="25" Width="30"/>
@@ -39,25 +38,6 @@
                 <TextBox x:Name="FromBox" Style="{StaticResource BasicTextbox}" Text="{Binding movement_from}" Width="150" Margin="5" Height="30"/>
                 <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding movement_to}" Width="150" Margin="5" Height="30"/>
                 <ComboBox Width="150" Style="{StaticResource BasicComboBox}" Height="30" Name="personnelBox" ItemsSource="{Binding personnel}" DisplayMemberPath="personnel_lastname" SelectedValue="{Binding personnel_id}" SelectedValuePath="personnel_id">
-=======
-                <DatePicker x:Name="DPicker" Text="{Binding movement_date}" FontSize="16" Width="150" Margin="5" Height="30">
-                    <DatePicker.Resources>
-                        <Style TargetType="{x:Type DatePickerTextBox}">
-                            <Setter Property="Control.Template">
-                                <Setter.Value>
-                                    <ControlTemplate>
-                                        <TextBox x:Name="PART_TextBox" 
-                                            Text="{Binding Path=SelectedDate, RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" Background="{DynamicResource BorautoLightBlue}" Foreground="#FFFFFF" />
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-                        </Style>
-                    </DatePicker.Resources>
-                </DatePicker>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding movement_from}" Width="150" Margin="5" Height="30"/>
-                <TextBox Style="{StaticResource BasicTextbox}" Text="{Binding movement_to}" Width="150" Margin="5" Height="30"/>
-                <ComboBox Style="{StaticResource BasicComboBox}" Height="30" Name="personnelBox" ItemsSource="{Binding personnel}" DisplayMemberPath="personnel_lastname" SelectedValue="{Binding personnel_id}" SelectedValuePath="personnel_id">
->>>>>>> 101f11e03a4e55a395a2b2d95a7cf5cb466997e4
                     <ComboBox.ItemContainerStyle>
                         <Style TargetType="ComboBoxItem">
                             <Setter Property="Background" Value="{DynamicResource BorautoLightBlue}"/>

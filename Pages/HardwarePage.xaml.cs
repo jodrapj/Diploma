@@ -26,6 +26,11 @@ namespace Diploma.Pages
 
         public void Edit()
         {
+            if (HardList.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите элемент для редактирования", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             Data.MFrame.Navigate(new AddEdit.AddEditHardware(HardList.SelectedItem as hardware));
             Connect.context.SaveChanges();
         }
@@ -37,6 +42,11 @@ namespace Diploma.Pages
 
         public void Remove()
         {
+            if (HardList.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите элемент для удаления", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             foreach (hardware item in HardList.SelectedItems)
             {
                 if (Connect.context.movement.Find(item.hard_id) != null || Connect.context.repair.Find(item.hard_id) != null
@@ -55,6 +65,11 @@ namespace Diploma.Pages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             Update();
+        }
+
+        public DataGrid GetDataGrid()
+        {
+            return HardList;
         }
     }
 }

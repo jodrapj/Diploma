@@ -14,6 +14,21 @@ namespace Diploma.res
     
     public partial class supply
     {
+        public static List<String> TableNames
+        {
+            get
+            {
+                List<String> tableNames = new List<String>()
+                {
+                    "ИД",
+                    "Дата поставки",
+                    "Поставщик",
+                    "Оборудование"
+                };
+
+                return tableNames;
+            }
+        }
         public int supply_id { get; set; }
         public Nullable<System.DateTime> supply_date { get; set; }
         public Nullable<int> supplier_id { get; set; }
