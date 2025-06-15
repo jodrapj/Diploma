@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\jodrapj\\Desktop\\Diploma\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|c:\\users\\jodrapj\\desktop\\diploma\\pages\\addedit\\addeditmovement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:pages\\addedit\\addeditmovement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|c:\\users\\jodrapj\\desktop\\diploma\\pages\\addedit\\addeditmovement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:pages\\addedit\\addeditmovement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|c:\\users\\jodrapj\\desktop\\diploma\\pages\\personnelpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6251122F-C5C5-430C-B9FE-959B9B65CF36}|Diploma.csproj|solutionrelative:pages\\personnelpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -19,6 +27,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AddEditMovement.xaml",
+              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditMovement.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditMovement.xaml",
+              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditMovement.xaml",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditMovement.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-15T15:10:08.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddEditMovement.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditMovement.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEdit\\AddEditMovement.xaml.cs",
+              "ToolTip": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\AddEdit\\AddEditMovement.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEdit\\AddEditMovement.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T15:10:07.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PersonnelPage.xaml",
               "DocumentMoniker": "C:\\Users\\jodrapj\\Desktop\\Diploma\\Pages\\PersonnelPage.xaml",
               "RelativeDocumentMoniker": "Pages\\PersonnelPage.xaml",

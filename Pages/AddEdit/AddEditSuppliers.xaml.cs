@@ -31,6 +31,9 @@ namespace Diploma.Pages.AddEdit
             {
                 this.DataContext = context;
                 this.context = context;
+            } else
+            {
+                this.DataContext = context = new supplier();
             }
         }
 

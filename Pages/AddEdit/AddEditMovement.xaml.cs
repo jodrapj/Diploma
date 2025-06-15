@@ -46,6 +46,7 @@ namespace Diploma.Pages.AddEdit
             {
                 context = new movement();
                 context = this.DataContext as movement;
+                //context.movement_date = 
                 Connect.context.movement.Add(context);
                 Connect.context.SaveChanges();
             }
